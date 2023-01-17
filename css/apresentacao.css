@@ -6,6 +6,10 @@
   grid-template-columns: 1fr 1fr;
   background-color: rgba(29, 28, 32, 0.9);
   justify-content: center;
+<<<<<<< HEAD
+=======
+  position: relative;
+>>>>>>> fb9255c37eb58924764887ffce21a161ce4bf7f3
 }
 
 .apresentacao h1{
@@ -21,6 +25,15 @@
   width: 100%;
   padding-bottom: 30px;
   position: relative;
+<<<<<<< HEAD
+=======
+  cursor: pointer;
+  transition: font-weight 0.3s;
+}
+
+.apresentacao h1:hover{
+  font-weight: bold;
+>>>>>>> fb9255c37eb58924764887ffce21a161ce4bf7f3
 }
 
 .apresentacao h1::after{
@@ -83,4 +96,35 @@
 
 .imagem-container img:hover{
   transform: scale(1.08);
+<<<<<<< HEAD
+=======
+}
+
+.popup{
+  display: none;
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 12px;
+  margin-left: 35%;
+}
+
+.titulo-popup{
+  color: aliceblue;
+  font-family: var(--fontTipo1);
+  padding: 30px;
+  font-size: 24px;
+}
+
+.descricao-popup{
+  color: aliceblue;
+  width: 28ch;
+  padding: 0 0 0 40px;
+}
+
+.ativo{
+  display: block;
+  transform: scale(1);
+>>>>>>> fb9255c37eb58924764887ffce21a161ce4bf7f3
 }
