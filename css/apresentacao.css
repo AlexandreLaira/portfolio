@@ -97,7 +97,7 @@
   position: absolute;
   width: 500px;
   height: 500px;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.7);
   border-radius: 12px;
   margin-left: 35%;
 }
@@ -113,6 +113,17 @@
   color: aliceblue;
   width: 28ch;
   padding: 0 0 0 40px;
+}
+
+.botao-popup{
+  color: var(--gainsboro);
+  background-color: var(--midnightblue);
+  width: 15px;
+  height: 15px;
+  font-family: var(--fontTipo1);
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 20px;
 }
 
 .ativo{
