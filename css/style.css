@@ -1,0 +1,11 @@
+
+
+@import url('./cores.css');
+@import url('./header.css');
+@import url('./apresentacao.css');
+@import url('./habilidades.css');
+
+body{
+  background-image: url(../imagens/background-image.jpg);
+  object-fit: cover;
+}
