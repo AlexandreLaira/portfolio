@@ -6,10 +6,7 @@
   grid-template-columns: 1fr 1fr;
   background-color: rgba(29, 28, 32, 0.9);
   justify-content: center;
-<<<<<<< HEAD
-=======
   position: relative;
->>>>>>> fb9255c37eb58924764887ffce21a161ce4bf7f3
 }
 
 .apresentacao h1{
@@ -19,21 +16,26 @@
   letter-spacing: 0.2rem;
   color: var(--lightCyan);
   display: flex;
-  margin-left: -30px;
+  margin: 30px;
   text-transform: uppercase;
   place-self: center;
-  width: 100%;
-  padding-bottom: 30px;
+  padding: 5px 25px 25px 25px;
   position: relative;
-<<<<<<< HEAD
-=======
   cursor: pointer;
-  transition: font-weight 0.3s;
+  border-radius: 40px;
+  transition: text-shadow 0.4s;
+  -webkit-text-stroke: 1px transparent;
 }
 
 .apresentacao h1:hover{
-  font-weight: bold;
->>>>>>> fb9255c37eb58924764887ffce21a161ce4bf7f3
+  color: white;
+  /* font-weight: 600; */
+  text-shadow:
+    /* -1px -1px 0 var(--gainsboro), */
+    /* 1px -1px 0 var(--gainsboro), */
+    /* -1px 1px 0 var(--gainsboro), */
+    1px 0px 8px var(--gainsboro);
+    -o-transition: all 0.4;
 }
 
 .apresentacao h1::after{
@@ -96,8 +98,6 @@
 
 .imagem-container img:hover{
   transform: scale(1.08);
-<<<<<<< HEAD
-=======
 }
 
 .popup{
@@ -105,7 +105,7 @@
   position: absolute;
   width: 500px;
   height: 500px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.9);
   border-radius: 12px;
   margin-left: 35%;
 }
@@ -119,23 +119,33 @@
 
 .descricao-popup{
   color: aliceblue;
-  width: 28ch;
+  width: 42ch;
   padding: 0 0 0 40px;
+  letter-spacing: 0.1rem;
+  font-family: var(--fontTipo1);
+}
+
+.botao-container{
+  display: flex;
+  justify-content: end;
+  padding: 45px;
 }
 
 .botao-popup{
   color: var(--gainsboro);
   background-color: var(--midnightblue);
-  width: 15px;
-  height: 15px;
   font-family: var(--fontTipo1);
   text-transform: uppercase;
   padding: 10px;
   border-radius: 20px;
 }
 
+@keyframes movimento {
+  from {width: 0; height: 0; opacity: 0;}
+  to {width: 500px; height: 500px; opacity: 1;}
+}
+
 .ativo{
   display: block;
-  transform: scale(1);
->>>>>>> fb9255c37eb58924764887ffce21a161ce4bf7f3
+  animation: movimento 1s;
 }
