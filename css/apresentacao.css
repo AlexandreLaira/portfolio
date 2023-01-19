@@ -104,8 +104,8 @@
   display: none;
   position: absolute;
   width: 500px;
-  height: 500px;
-  background-color: rgba(0, 0, 0, 0.9);
+  /* height: 460px; */
+  background-color: rgba(0, 0, 0, 0.94);
   border-radius: 12px;
   margin-left: 35%;
 }
@@ -117,12 +117,43 @@
   font-size: 24px;
 }
 
-.descricao-popup{
-  color: aliceblue;
-  width: 42ch;
-  padding: 0 0 0 40px;
+.informacao{
+  color: var(--gainsboro);
+  list-style: none;
   letter-spacing: 0.1rem;
+  padding: 15px;
+  line-height: 1.8rem;
   font-family: var(--fontTipo1);
+  transition: border-bottom 0.3s;
+}
+
+.informacao a{
+  text-decoration: none;
+  color: var(--gainsboro);
+  cursor: pointer;
+}
+
+.semmargin {
+  margin-left: 0;
+}
+
+.commargin{
+  margin-left: 45px;
+  position: relative;
+}
+
+.commargin::before{
+  content: '';
+  width: 20px;
+  height: 10px;
+  background-color: var(--midnightblue);
+  position: absolute;
+  top: 7px;
+  left: -35px;
+}
+
+.informacao a:hover{
+  text-decoration: underline;
 }
 
 .botao-container{
@@ -136,8 +167,15 @@
   background-color: var(--midnightblue);
   font-family: var(--fontTipo1);
   text-transform: uppercase;
+  text-decoration: none;
   padding: 10px;
   border-radius: 20px;
+  transition: 0.3s;
+}
+
+.botao-popup:hover{
+  background-color: var(--gainsboro);
+  color: var(--midnightblue);
 }
 
 @keyframes movimento {
