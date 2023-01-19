@@ -18,12 +18,58 @@
 }
 
 .lista-habilidades{
+  width: 1400px;
+  margin: 0 auto;
   display: flex;
-  gap: 40px;
+  gap: 10px;
   justify-content: center;
 }
 
-.lista-habilidades li{
+.titulo-principal{
+  margin-top: 15px;
+}
+
+.lista-hab-li{
   text-decoration: none;
   list-style: none;
+  margin-top: 65px;
+  padding: 25px;
+  flex: 1;
+  background-color: rgba(0, 0, 63, 0.815);
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 40px;
+  transition: 0.5s;
+  color: aliceblue;
+  position: relative;
 }
+
+.secundario{
+  display: none;
+  font-family: var(--fontTipo1);
+}
+
+.lista-hab-li:hover{
+  display: inline;
+  flex: 4;
+}
+
+.lista-hab-li:hover img{
+  display: flex;
+}
+
+.lista-hab-li:hover .secundario{
+  position: absolute;
+  display: block;
+  right: 32px;
+  top: 20px;
+}
+
+.lista-hab-li:hover .secundario h5{
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.lista-hab-li:hover .principal h4{
+  display: none;
+}
+
