@@ -3,7 +3,7 @@
   max-width: 1600px;
   margin: 0 auto;
   height: 400px;
-  background-color: var(--mintCream);
+  background-color: rgba(255, 255, 255, 0.9);
   text-align: center;
 }
 
@@ -15,6 +15,7 @@
   border-radius: 40px;
   width: 75%;
   margin: 0 auto 30px auto;
+  font-family: var(--fontTipo1);
 }
 
 .lista-habilidades{
@@ -33,14 +34,18 @@
   text-decoration: none;
   list-style: none;
   margin-top: 65px;
-  padding: 25px;
+  padding: 15px;
   flex: 1;
-  background-color: rgba(0, 0, 63, 0.815);
+  
   box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3);
   border-radius: 40px;
-  transition: 0.5s;
-  color: aliceblue;
+  transition: 0.9s;
+  /* color: var(--azure); */
   position: relative;
+}
+
+.principal{
+  font-family: var(--fontTipo1);
 }
 
 .secundario{
@@ -51,10 +56,13 @@
 .lista-hab-li:hover{
   display: inline;
   flex: 4;
+  background-color: rgba(0, 0, 63, 0.815);
+  color: var(--azure);
 }
 
 .lista-hab-li:hover img{
   display: flex;
+
 }
 
 .lista-hab-li:hover .secundario{
