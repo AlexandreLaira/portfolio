@@ -29,11 +29,7 @@
 
 .apresentacao h1:hover{
   color: white;
-  /* font-weight: 600; */
   text-shadow:
-    /* -1px -1px 0 var(--gainsboro), */
-    /* 1px -1px 0 var(--gainsboro), */
-    /* -1px 1px 0 var(--gainsboro), */
     1px 0px 8px var(--gainsboro);
     -o-transition: all 0.4;
 }
@@ -104,7 +100,6 @@
   display: none;
   position: absolute;
   width: 500px;
-  /* height: 460px; */
   background-color: rgba(0, 0, 0, 0.94);
   border-radius: 12px;
   margin-left: 35%;
@@ -113,7 +108,7 @@
 .titulo-popup{
   color: aliceblue;
   font-family: var(--fontTipo1);
-  padding: 30px;
+  padding: 25px 65px;
   font-size: 24px;
 }
 
@@ -121,7 +116,7 @@
   color: var(--gainsboro);
   list-style: none;
   letter-spacing: 0.1rem;
-  padding: 15px;
+  padding: 15px 35px;
   line-height: 1.8rem;
   font-family: var(--fontTipo1);
   transition: border-bottom 0.3s;

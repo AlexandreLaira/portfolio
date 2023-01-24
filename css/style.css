@@ -4,6 +4,7 @@
 @import url('./header.css');
 @import url('./apresentacao.css');
 @import url('./habilidades.css');
+@import url('./experiencia.css');
 
 body{
   background-image: url(../imagens/background-image.jpg);

@@ -20,7 +20,7 @@
 
 .lista-habilidades{
   width: 1400px;
-  margin: 0 auto;
+  margin: 0px auto;
   display: flex;
   gap: 10px;
   justify-content: center;
@@ -33,14 +33,12 @@
 .lista-hab-li{
   text-decoration: none;
   list-style: none;
-  margin-top: 65px;
+  margin: 25px;
   padding: 15px;
   flex: 1;
-  
   box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3);
   border-radius: 40px;
   transition: 0.9s;
-  /* color: var(--azure); */
   position: relative;
 }
 
@@ -79,5 +77,10 @@
 
 .lista-hab-li:hover .principal h4{
   display: none;
+}
+
+.mostrar{
+  opacity: 1;
+  transition: opacity 1s linear;
 }
 

@@ -1,0 +1,21 @@
+.experiencia{
+  max-width: 1600px;
+  margin: 0 auto;
+  height: 400px;
+  background-color: rgba(29, 28, 32, 0.9);
+  text-align: center;
+}
+
+
+
+.titulo-experiencia{
+  font-size: 36px;
+  text-transform: uppercase;
+  padding-top: 45px;
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+  border-radius: 40px;
+  width: 75%;
+  margin: 0 auto 30px auto;
+  font-family: var(--fontTipo1);
+  color: var(--lightCyan);
+}
