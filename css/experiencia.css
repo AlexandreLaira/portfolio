@@ -1,7 +1,7 @@
-.experiencia{
+#experiencia{
   max-width: 1600px;
   margin: 0 auto;
-  height: 400px;
+  height: auto;
   background-color: rgba(29, 28, 32, 0.9);
   text-align: center;
 }
@@ -18,4 +18,22 @@
   margin: 0 auto 30px auto;
   font-family: var(--fontTipo1);
   color: var(--lightCyan);
+}
+
+.lista-experiencia{
+  width: 45ch;
+  display: inline;
+}
+
+.empresa-experiencia{
+  color: var(--lightCyan);
+  font-size: 1.8rem;
+  font-family: var(--fontTipo1);
+}
+
+.descricao-experiencia{
+  color: var(--lightCyan);
+  font-size: 1.1rem;
+  font-family: var(--fontTipo1);
+  max-width: 45ch;
 }
