@@ -182,3 +182,48 @@
   display: block;
   animation: movimento 1s;
 }
+
+
+@media screen and (width < 1200px) {
+
+  .apresentacao{
+    display: block;
+  }
+
+
+  .apresentacao h1{
+    display: block;
+    font-size: 1.3rem;
+    place-self: left;
+    padding: 10px;
+    margin: 0 15px;
+  }
+
+  .apresentacao h1::after{
+    font-size: 0.5rem;
+    top: 60px;
+    left: 10px;
+  }
+
+  .titulo-conteudo{
+    font-size: 1rem;
+    margin-left: 30px;
+  }
+
+  .conteudo-apresentacao{
+    font-size: 0.8rem;
+  }
+
+  .imagem{
+    display: none;
+  }
+
+  .popup{
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+}

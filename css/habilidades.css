@@ -60,7 +60,6 @@
 
 .lista-hab-li:hover img{
   display: flex;
-
 }
 
 .lista-hab-li:hover .secundario{
@@ -82,5 +81,61 @@
 .mostrar{
   opacity: 1;
   transition: opacity 1s linear;
+}
+
+
+@media screen and (width < 1200px) {
+
+  .habilidades{
+    display: block;
+    width: 100vw;
+    height: auto;
+  }
+
+  .titulo-habilidades{
+    font-size: 1.7rem;
+    padding-top: 12px;
+    margin-bottom: 7px;
+  }
+
+  .lista-habilidades{
+    display: block;
+    width: 100vw;
+  }
+
+  .lista-hab-li{
+    display: block;
+    width: 60vw;
+    margin: 0 auto;
+    padding: 12px;
+  }
+
+  .principal img{
+    display: none;
+  }
+
+  .lista-hab-li:hover{
+    width: 100%;
+    color: var(--azure);
+    display: flex;
+    height: auto;
+    padding: 30px;
+    margin: 15px 0;
+  }
+
+  .lista-hab-li:hover img{
+    opacity: 0.2;
+  }
+
+  .lista-hab-li:hover ~ .secundario{
+    display: block;
+    font-family: var(--fontTipo1);
+    padding: 15px;
+  }
+
+  .desc li{
+    list-style: none;
+  }
+
 }
 

@@ -12,7 +12,7 @@ a{
   display: flex;
   max-width: 1600px;
   margin: 20px auto 0 auto;
-  height: 100px;
+  /* height: 100px; */
   background-color: rgba(29, 28, 32, 0.9);
 
 }
@@ -60,4 +60,51 @@ a{
 .links a:active,
 .links a:visited{
   color: inherit;
+}
+
+.header span{
+  display: none;
+}
+
+.ativo{
+  display: block;
+}
+
+
+@media screen and (width < 1200px) {
+
+  .header{
+    max-height: 130px;
+    margin: 0;
+  }
+
+  .header span{
+    display: block;
+    color: var(--lightCyan);
+    font-family: var(--fontTipo1);
+    padding: 10px;
+  }
+
+  .header span:focus ~ .lista-header{
+    display: block;
+  }
+
+  .titulo-header{
+    font-size: 1rem;
+    padding: 8px;
+  }
+
+  .lista-header{
+    padding: 0;
+    gap: 0;
+    display: none;
+  }
+
+  .lista-header li{
+    font-size: 10px;
+    display: block;
+  }
+
+
+  
 }
