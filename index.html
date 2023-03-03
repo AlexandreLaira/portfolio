@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./imagens/Icones/fontawesome-free-6.3.0-web/css/all.css" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css" />
     <title>Alexandre Laira Junior</title>
   </head>
@@ -17,44 +18,12 @@
 
   <body>
     <main>
-      
-      <header class="header">
-        <h1 class="titulo-header">Portifólio</h1>
-        <span>Menu</span>
-        <ul class="lista-header">
-          <li class="links">Sobre</li>
-          <li class="links"><a href='#experiencia'>Experiência</a></li>
-          <li class="links">Contato</li>
-        </ul> <!-- titulo-header -->
-      </header>
-
-      <section class="apresentacao">
-        <div class="conteudo-apresentacao">
-          <h1>Alexandre laira Junior</h1>
-          <h2 class="titulo-conteudo">Como eu sou</h2>
-          <p class="descricao-conteudo">
-            Tenho facilidade em resolver problemas, sou dinâmico, autodidata,
-            possuo conhecimento em rotinas administrativas, boa relação
-            interpessoal. Desenvolvi habilidades e conhecimento necessário em
-            desenvolvimento web, como a linguagem de marcação html, de estilo,
-            css, e de programação, javascript. Possuo conhecimento em
-            gerenciamento de versões utilizando o Git e o Github. Possuo
-            conhecimento em Power BI e Excel Avançado, aprendi as linguagens de
-            programação R e Python.
-          </p>
-        </div> <!-- conteudo-apresentacao -->
-        <div class="imagem">
-          <div class="imagem-container">
-            <img src="./imagens/perfil.jpg" alt="" width="400px" />
-          </div> <!-- imagem-container -->
-        </div> <!-- imagem -->
-
-        <div class="popup">
-          <h4 class="titulo-popup">Informações</h4>
-
+      <div class="popup">
+        <fieldset>
+          <legend>Informações Gerais</legend>
+          
           <ul class="informacao">
             <li>Nome: Alexandre Laira Junior</li>
-            <li>Idade: 35 anos</li>
             <li>Formação: <a class="semmargin" href="https://portal.anhembi.br/graduacao/sistemas-de-informacao/" target="_blank">Sistemas de Informação - Anhembi Morumbi</a></li>
             <Span>Cursos:</Span>
             <li><a class="commargin" href='https://www.origamid.com/curso/html-e-css-para-iniciantes/' target="_blank">HTML, CSS - Origamid</a></li>
@@ -63,11 +32,49 @@
             <li><a class="commargin" href="https://www.udemy.com/course/bancos-de-dados-relacionais-basico-avancado/?src=sac&kw=sql" target="_blank">SQL - Udemy</a></li>
           </ul><!-- informacao -->
 
+          
           <div class="botao-container">
-            <a class="botao-popup" href="./">Fechar</a>
+            <a href="https://www.linkedin.com/in/alexandrelaira/" class="midia" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a class="botao-popup">Fechar</a>
           </div> <!-- botao-container -->
+        </fieldset>
+      </div> <!-- popup -->
 
-        </div> <!-- popup -->
+
+      <div id="fundo">
+        <header class="header">
+          <h1 class="titulo-header">Portifólio</h1>
+          <span>Menu</span>
+          <ul class="lista-header">
+            <li class="links">Sobre</li>
+            <li class="links"><a href='#experiencia'>Experiência</a></li>
+            <li class="links">Contato</li>
+          </ul> <!-- titulo-header -->
+        </header>
+
+        <section class="apresentacao">
+          <div class="conteudo-apresentacao">
+            <h1>Alexandre laira Junior</h1>
+            <h2 class="titulo-conteudo">Como eu sou</h2>
+            <p class="descricao-conteudo">
+              Tenho facilidade em resolver problemas, sou dinâmico, autodidata,
+              possuo conhecimento em rotinas administrativas, boa relação
+              interpessoal. Desenvolvi habilidades e conhecimentos necessários em
+              desenvolvimento web, como a linguagem de marcação html, de estilo,
+              css, e de programação, javascript. Conhecimentos em
+              gerenciamento de versões utilizando o Git e o Github. Possuo
+              conhecimento em Power BI e Excel e também nas linguagens de
+              programação R e Python.
+            </p>
+          </div> <!-- conteudo-apresentacao -->
+          <div class="imagem">
+            <div class="imagem-container">
+              <img src="./imagens/perfil.jpg" alt="" width="400px" />
+            </div> <!-- imagem-container -->
+          </div> <!-- imagem -->
+      
+
+
       </section> <!-- apresentacao -->
 
 
@@ -84,7 +91,7 @@
               </div> <!-- principal -->
 
               <div class="secundario">
-                  <h5 class="titulo-desc">Conhecimentos intermediários de HTML</h5>
+                  <h5 class="titulo-desc">Conhecimentos em HTML</h5>
                   <ul class="desc">
                     <li class="lista-desc">Semântica</li>
                     <li class="lista-desc">SEO</li>
@@ -102,7 +109,7 @@
               </div> <!-- principal -->
 
               <div class="secundario">
-                <h5 class="titulo-desc">Conhecimentos intermediários em CSS3</h5>
+                <h5 class="titulo-desc">Conhecimentos em CSS3</h5>
                 <ul class="desc">
                   <li class="lista-desc">Grid Layout</li>
                   <li class="lista-desc">Layout Responsivo</li>
@@ -118,7 +125,7 @@
             </div> <!-- principal -->
 
             <div class="secundario">
-              <h5 class="titulo-desc">Conhecimentos basicos em JS</h5>
+              <h5 class="titulo-desc">Conhecimentos em JS</h5>
               <ul class="desc">
                 <li class="lista-desc">Manipulacao DOM</li>
                 <li class="lista-desc">Prototype</li>
@@ -134,7 +141,7 @@
             </div>
 
             <div class="secundario">
-              <h5 class="titulo-desc">Conhecimentos basicos em GIT</h5>
+              <h5 class="titulo-desc">Conhecimentos em GIT</h5>
               <ul class="desc">
                 <li class="lista-desc">Configuracao Inicial</li>
                 <li class="lista-desc">Branchs</li>
@@ -150,7 +157,7 @@
             </div> <!-- principal -->
 
             <div class="secundario">
-              <h5 class="titulo-desc">Conhecimentos basicos em VUE.JS</h5>
+              <h5 class="titulo-desc">Conhecimentos em VUE.JS</h5>
               <ul class="desc">
                 <li class="lista-desc">Lorem Ipsum</li>
                 <li class="lista-desc">Lorem Ipsum</li>
@@ -161,73 +168,97 @@
 
         </ul> <!-- lista-habiliades -->
       </section> <!-- habilidades -->
+    
 
       <section id="experiencia">
         <h1 class="titulo-experiencia">Experiência</h1>
         <dl class="lista-experiencia">
 
-          <dt class="empresa-experiencia">Meta Positiva</dt>
-          <dd class="descricao-experiencia">
-            Monitoramento, acompanhamento, criação de dashboards e automatização de processos em Python para dar suporte à operação de vendas de planos de telefonia.
-          </dd>
+          <div class="lista-container">
+            <dt class="empresa-experiencia">Meta Positiva</dt>
+            <dd class="descricao-experiencia">
+              Monitoramento, acompanhamento, criação de dashboards e automatização de processos em Python para dar suporte à operação de vendas de planos de telefonia.
+            </dd>
+          </div>
 
-          <dt class="empresa-experiencia">EmpresaIndra Company</dt>
-          <dd class="descricao-experiencia">
-            Auxílio na gestão das linhas telefônicas do cliente.
-            Criação de banco de dados em Access e relatórios em linguagem R e Power BI para análise de desempenho dos projetos do cliente em relação ao uso dos serviços de telefonia
-          </dd>
+          <div class="lista-container">
+            <dt class="empresa-experiencia">Minsait - Indra Company</dt>
+            <dd class="descricao-experiencia">
+              Auxílio na gestão das linhas telefônicas do cliente.
+              Criação de banco de dados em Access e relatórios em linguagem R e Power BI para análise de desempenho dos projetos do cliente em relação ao uso dos serviços de telefonia
+            </dd>
+          </div>
 
-          <dt class="empresa-experiencia">Vibra Visão Brasil</dt>
-          <dd class="descricao-experiencia">
-            Auxílio na gestão das linhas telefônicas do cliente.
-            Criação de banco de dados em Access e relatórios em linguagem R e Power BI para análise de desempenho dos projetos do cliente em relação ao uso dos serviços de telefonia
-          </dd>
+          <div class="lista-container">
+            <dt class="empresa-experiencia">Vibra Visão Brasil</dt>
+            <dd class="descricao-experiencia">
+              Auxílio na gestão das linhas telefônicas do cliente.
+              Criação de banco de dados em Access e relatórios em linguagem R e Power BI para análise de desempenho dos projetos do cliente em relação ao uso dos serviços de telefonia
+            </dd>
+          </div>
 
-          <dt class="empresa-experiencia">Consórcio Etanol</dt>
-          <dd class="descricao-experiencia">
-            Entrega e controle de estoque de EPIs.
-            Conferência de material, controle de nota fiscal.
-          </dd>
+          <div class="lista-container">
+            <dt class="empresa-experiencia">Consórcio Etanol</dt>
+            <dd class="descricao-experiencia">
+              Entrega e controle de estoque de EPIs.
+              Conferência de material, controle de nota fiscal.
+            </dd>
+          </div>
 
-          <dt class="empresa-experiencia">Crocantinho de Minas</dt>
-          <dd class="descricao-experiencia">
-            Relacionamento com clientes e com fornecedores;
-            Controle de produção, estoque de matéria prima, estoque de produto acabado;
-            Emissão de Nota Fiscal Eletrônica;
-            Controle financeiro, relacionamento com bancos;
-            Vendas, compras.
-          </dd>
+          <div class="lista-container">
+            <dt class="empresa-experiencia">Crocantinho de Minas</dt>
+            <dd class="descricao-experiencia">
+              Relacionamento com clientes e com fornecedores;
+              Controle de produção, estoque de matéria prima, estoque de produto acabado;
+              Emissão de Nota Fiscal Eletrônica;
+              Controle financeiro, relacionamento com bancos;
+              Vendas, compras.
+            </dd>
+          </div>
 
-          <dt class="empresa-experiencia">Visual Work Uniformes Ltda</dt>
-          <dd class="descricao-experiencia">
-            Emissão de Nota Fiscal Eletrônica, apuração de impostos.
-            Controle financeiro em programa desenvolvido para a empresa.
-            Manutenção em computadores e instalação de software simples.
-          </dd>
+          <div class="lista-container">
+            <dt class="empresa-experiencia">Visual Work Uniformes Ltda</dt>
+            <dd class="descricao-experiencia">
+              Emissão de Nota Fiscal Eletrônica, apuração de impostos.
+              Controle financeiro em programa desenvolvido para a empresa.
+              Manutenção em computadores e instalação de software simples.
+            </dd>
+          </div>
 
-          <dt class="empresa-experiencia">Centro de Medicina Nuclear da Guanabara Ltda.</dt>
-          <dd class="descricao-experiencia">
-            Atendimento e agendamento de exames clinicos pelo telefone.
-          </dd>
+          <div class="lista-container">
+            <dt class="empresa-experiencia">Centro de Medicina Nuclear da Guanabara Ltda.</dt>
+            <dd class="descricao-experiencia">
+              Atendimento e agendamento de exames clinicos pelo telefone.
+            </dd>
+          </div>
 
-          <dt class="empresa-experiencia">Autonomo</dt>
-          <dd class="descricao-experiencia">
-            Instalação residencial de tomadas, lâmpadas, chuveiros.
-          </dd>
+          <div class="lista-container">
+            <dt class="empresa-experiencia">Autonomo</dt>
+            <dd class="descricao-experiencia">
+              Instalação residencial de tomadas, lâmpadas, chuveiros.
+            </dd>
+          </div>
 
-          <dt class="empresa-experiencia">Security System Segurança Ltda.</dt>
-          <dd class="descricao-experiencia">
-            Instalação de portões eletrônicos, alarmes, cercas elétricas; auxilio na manutenção em PABX e interfones.
-          </dd>
+          <div class="lista-container">
+            <dt class="empresa-experiencia">Security System Segurança Ltda.</dt>
+            <dd class="descricao-experiencia">
+              Instalação de portões eletrônicos, alarmes, cercas elétricas; auxilio na manutenção em PABX e interfones.
+            </dd>
+          </div>
 
-          <dt class="empresa-experiencia">Ita Armários Ltda</dt>
-          <dd class="descricao-experiencia">
-            Auxilio na montagem de móveis em geral.
-          </dd>
+          <div class="lista-container">
+            <dt class="empresa-experiencia">Ita Armários Ltda</dt>
+            <dd class="descricao-experiencia">
+              Auxilio na montagem de móveis em geral.
+            </dd>
+          </div>
           
         </dl> <!-- Lista Experiencia -->
       </section> <!-- Experiencia -->
 
+
+
+    </div><!-- fundo -->
     <script src="./javascript/script.js"></script>
   </body>
 </html>

@@ -3,12 +3,37 @@
   margin: 0 auto;
   height: auto;
   background-color: rgba(29, 28, 32, 0.9);
-  text-align: center;
+}
+
+.lista-experiencia{
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  gap: 45px;
+}
+
+.lista-container{
+  text-align: right;
+  cursor: pointer;
+}
+
+.lista-container:nth-child(even),
+.descricao-experiencia:nth-child(odd){
+  text-align: left;
+}
+
+.descricao-experiencia{
+  /* display: none; */
+}
+
+.ativo .descricao-experiencia{
+  display: block;
 }
 
 
-
 .titulo-experiencia{
+  text-align: center;
   font-size: 36px;
   text-transform: uppercase;
   padding-top: 45px;
@@ -18,11 +43,6 @@
   margin: 0 auto 30px auto;
   font-family: var(--fontTipo1);
   color: var(--lightCyan);
-}
-
-.lista-experiencia{
-  width: 45ch;
-  display: inline;
 }
 
 .empresa-experiencia{
@@ -35,5 +55,4 @@
   color: var(--lightCyan);
   font-size: 1.1rem;
   font-family: var(--fontTipo1);
-  max-width: 45ch;
 }

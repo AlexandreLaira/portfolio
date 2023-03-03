@@ -6,6 +6,10 @@
 @import url('./habilidades.css');
 @import url('./experiencia.css');
 
+.fundo{
+  filter: brightness(0.4) blur(2px);
+}
+
 body{
   background-image: url(../imagens/background-image.jpg);
   object-fit: cover;

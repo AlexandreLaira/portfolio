@@ -75,19 +75,19 @@
 }
 
 .imagem{
-  background-color: var(--midnightblue);
+  background-color: rgba(0, 24, 63, 0.715);
   border-radius: 1200px 50px 100px 125px;
-  width: 500px;
-  height: 80%;
+  width: 400px;
+  margin-bottom: 70px;
   place-self: center;
   grid-column: 2;
 }
+
 
 .imagem-container img{
   max-width: 100%;
   border-radius: 125px 250px 180px 275px;
   padding-left: 80px;
-  padding-bottom: 100px;
   object-fit: cover;
   transition: transform 0.2s;
 }
@@ -96,13 +96,27 @@
   transform: scale(1.08);
 }
 
+fieldset{
+  border: none;
+  border-radius: 12px;
+  color: aliceblue;
+  padding: 22px;
+  margin: 15px;
+  font-family: var(--fontTipo1);
+}
+
+fieldset legend{
+  text-transform: uppercase;
+}
+
 .popup{
   display: none;
   position: absolute;
   width: 500px;
-  background-color: rgba(0, 0, 0, 0.94);
+  background-color: rgba(54,54,54, 0.8);
   border-radius: 12px;
-  margin-left: 35%;
+  margin: 5% 40%;
+  z-index: 1;
 }
 
 .titulo-popup{
@@ -110,6 +124,7 @@
   font-family: var(--fontTipo1);
   padding: 25px 65px;
   font-size: 24px;
+  filter: brightness(1.2);
 }
 
 .informacao{
@@ -120,12 +135,14 @@
   line-height: 1.8rem;
   font-family: var(--fontTipo1);
   transition: border-bottom 0.3s;
+  filter: brightness(1.2);
 }
 
 .informacao a{
   text-decoration: none;
   color: var(--gainsboro);
   cursor: pointer;
+  filter: brightness(1.2);
 }
 
 .semmargin {
@@ -153,8 +170,8 @@
 
 .botao-container{
   display: flex;
-  justify-content: end;
-  padding: 45px;
+  justify-content: space-between;
+  padding: 25px;
 }
 
 .botao-popup{
@@ -166,6 +183,12 @@
   padding: 10px;
   border-radius: 20px;
   transition: 0.3s;
+  cursor: pointer;
+}
+
+.botao-container a{
+  text-align: center;
+  place-self: end;
 }
 
 .botao-popup:hover{
@@ -180,7 +203,12 @@
 
 .ativo{
   display: block;
-  animation: movimento 1s;
+}
+
+
+.midia{
+  font-size: 3rem;
+  color: white;
 }
 
 
@@ -227,3 +255,4 @@
   }
 
 }
+

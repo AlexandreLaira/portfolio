@@ -38,8 +38,9 @@
   flex: 1;
   box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3);
   border-radius: 40px;
-  transition: 0.9s;
+  transition: 0.3s;
   position: relative;
+  cursor: pointer;
 }
 
 .principal{
@@ -53,7 +54,7 @@
 
 .lista-hab-li:hover{
   display: inline;
-  flex: 4;
+  flex: 3;
   background-color: rgba(0, 0, 63, 0.815);
   color: var(--azure);
 }
@@ -80,7 +81,7 @@
 
 .mostrar{
   opacity: 1;
-  transition: opacity 1s linear;
+  transition: opacity .3s linear;
 }
 
 
