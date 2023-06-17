@@ -1,6 +1,7 @@
 @import url('./geral.css');
 @import url('./main.css');
 @import url('./sobre.css');
+@import url('./habilidades.css');
 
 
 *{
@@ -13,4 +14,8 @@
 a:active,
 a:visited{
   color: inherit;
+}
+
+li{
+  list-style: none;
 }
