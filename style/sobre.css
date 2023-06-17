@@ -1,0 +1,45 @@
+.sobre{
+  padding: 100px 150px;
+  background-color: var(--background-secao-2);
+  margin: -20px 0;
+}
+
+.container-sobre{
+  display: flex;
+  align-items: center;
+}
+
+.sobre img{
+  width: 642px;
+  object-fit: cover;
+  object-position: top;
+  position: relative;
+  right: -100px;
+  z-index: 1;
+}
+
+.conteudo-sobre{
+  max-height: 60vh;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100ch;
+  border: 8px solid var(--cor-metade-background-secao-3);
+  padding: 60px;
+  padding-left: 150px;
+  z-index: 2;
+}
+
+.conteudo-sobre h2{
+  color: black;
+  font-size: 35px;
+  font-family: var(--font-principal);
+  font-weight: 300;
+}
+
+.conteudo-sobre p{
+  font-size: 14px;
+  line-height: 1.7em;
+  color: rgba(0, 0, 0, 0.7);
+}

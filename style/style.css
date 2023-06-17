@@ -1,5 +1,6 @@
 @import url('./geral.css');
 @import url('./main.css');
+@import url('./sobre.css');
 
 
 *{
@@ -7,4 +8,9 @@
   margin: 0;
   box-sizing: border-box;
   font-family: var(--font-secundaria);
+}
+
+a:active,
+a:visited{
+  color: inherit;
 }
