@@ -1,112 +1,197 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <title>Portifólio - Alexandre Laira</title>
-</head>
-<body>
-  <main>
-    <header>
-
-        <div class="telefone">(11) 97575-5752</div>
-
-        <div class="principal">
-          <p>Alexandre Laira</p>
-          <ul>
-            <li>Habilidades</li>
-            <li>Projetos</li>
-            <li>Experiência</li>
-            <li>Contato</li>
-          </ul>
-        </div>
-
-    </header>
-    <section class="principal-titulo">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script type="module" src="./scripts/scripts.js" defer></script>
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Portifólio - Alexandre Laira</title>
+  </head>
+  <body>
+    <aside class="guia">
       <div>
-        <h1>Profissional de alta performance para sua equipe</h1>
-        <h2>Seriedade, comprometimento e determinação são alguns dos fatores primordiais para se chegar a um objetivo. 
-          Entre em contato e agende uma entrevista.
-        </h2>
-        <button><a href="https://wa.me/11975755752" target="_blank">Contato</a></button>
+        <label class="" for="aside_inicio"><a href="#">INICIO</a></label>
+        <input checked type="radio" name="secao" id="aside_inicio" value="inicio">
       </div>
-    </section>
 
-
-    <section class="sobre">
-      <div class="container-sobre">
-        <div class="imagem">
-          <img src="./img/perfil.jpg" alt="foto-alexandre" width="642px" height="584px">
-        </div>
-        <div class="conteudo-sobre">
-          <h2>Profissional com experiência em diversas áreas</h2>
-          <p>Já trabalhei com rotinas administrativas e tenho imenso prazer em aumentar meu conhecimento. Em meus projetos utilizei gerenciamento de versões com o Git e o Github, além de ter trabalhado com análise de dados com Power BI e Excel e também com as linguagens de programação R e Python.</p>
-
-        </div>
+      <div>
+        <label class="semcheck" for="aside_sobre"><a href="#sobre">SOBRE</a></label>
+        <input type="radio" name="secao" id="aside_sobre" value="sobre">
       </div>
-    </section>
 
-    <section class="habilidades">
-      <h2 class="habilidades-titulo">HABILIDADES</h2>
-      <ul class="habilidades-lista">
+      <div>
+        <label class="semcheck" for="aside_projetos"><a href="#projetos">PROJETOS</a></label>
+        <input type="radio" name="secao" id="aside_projetos" value="projetos">
+      </div>
 
-        <li class="habilidades-conteudo fundo1">
-          <div class="habilidades-imagem">
-            <img src="./img/icones/html-5.png" alt="html" width="35px">
-            <img src="./img/icones/css-3.png" alt="html" width="35px">
-            <img src="./img/icones/js.png" alt="html" width="35px">
+      <div>
+        <label class="semcheck" for="aside_habilidades"><a href="#habilidades">HABILIDADES</a></label>
+        <input type="radio" name="secao" id="aside_habilidades" value="habilidades">
+      </div>
+
+      <div>
+        <label class="semcheck" for="aside_contato"><a href="#contato">CONTATO</a></label>
+        <input type="radio" name="secao" id="aside_contato" value="contato">
+      </div>
+    </aside>
+
+    
+    <main>
+      
+      <header class="inicio" data-secao="inicio">
+        <nav class="menu-mobile" data-menu="lista">
+          <p>MENU</p>
+          <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+        <div class="telefone">
+          <span>(11) 97575-5752</span>
+        </div>
+        
+        <nav class="principal">
+          <p>Alexandre Laira</p> 
+          <div class="botao-mobile" data-botao="menu"></div>
+          <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+        <section class="principal-titulo" >
+          <div>
+            <h1>Profissional de alta performance para sua equipe</h1>
+            <h2>Seriedade, comprometimento e determinação são alguns dos fatores primordiais para se chegar a um objetivo. 
+            Entre em contato e agende uma entrevista.
+            </h2>
           </div>
-          <h3>HTML, CSS, JAVASCRIPT</h3>
-          <p>Base da programação Front-End. Composta pela linguagem de marcação HTML, que define a estrutura, o CSS que define os estilos e design da página e o JAVASCRIPT que realiza toda a interatividade entre o site e o usuário. 
-          </p>
-        </li>
-
-        <li class="habilidades-conteudo fundo2">
-          <div class="habilidades-imagem">
-            <img src="./img/icones/sass.png" alt="html" width="35px">
+          <a class="botao" href="https://wa.me/11975755752" target="_blank">whatsapp</a>
+        </section>
+      </header>
+      
+      <section class="sobre" id="sobre" data-secao="sobre">
+        <div class="container-sobre">
+          <div class="imagem">
+            <img src="./img/perfil.webp" alt="foto-alexandre" width="642px" height="584px">
           </div>
-          <h3>PRE PROCESSADOR</h3>
-          <p>Sass é uma linguagem de folha de estilo compilada para CSS. Ele permite que você use variáveis, regras aninhadas, mixins, funções e muito mais, tudo com uma sintaxe totalmente compatível com CSS. O Sass ajuda a manter folhas de estilo grandes bem organizadas e facilita o compartilhamento de design dentro e entre projetos. 
-          </p>
-        </li>
-
-        <li class="habilidades-conteudo fundo3">
-          <div class="habilidades-imagem">
-            <img src="./img/icones/reactjs.png" alt="html" width="35px">
+          <div class="conteudo-sobre">
+            <h2>Profissional com experiência em diversas áreas</h2>
+            <p>Já trabalhei com rotinas administrativas e tenho imenso prazer em aumentar meu conhecimento. Em meus projetos utilizei gerenciamento de versões com o Git e o Github, além de ter trabalhado com análise de dados com Power BI e Excel e também com as linguagens de programação R e Python.</p>
           </div>
-          <h3>BIBLIOTECA</h3>
-          <p>O ReactJS é uma das bibliotecas de JavaScript mais populares para desenvolvimento de aplicativos web ou para dispositivos móveis. Criado pelo Facebook, o React contém uma coleção de trechos de código de JavaScript reutilizáveis chamados componentes, usados para a construção da interface do usuário (UI). 
-          </p>
-        </li>
+        </div>
+      </section>
+      
+      <section class="projetos" id="projetos" data-secao="projetos">
+        <h2 class="secao-titulo">PROJETOS</h2>
+        
+        <ul class="projetos-lista">
+          <li class="projetos-conteudo fundo1">
+            <div class="projetos-imagem">
+              <img src="./img/Projetos/Deliciasdana2.png" alt="html" width="335px">
+            </div>
+            <h3>Delicias da Ná</h3>
+            <p>Site desenvolvido com HTML, CSS e JAVASCRIPT, usando como pré processador de CSS o SASS, com o intúito de consolidar meus conhecimentos nessas ferramentas.
+            </p>
+            <a class="botao" href="https://www.deliciasdana.com.br" target="_blank">ACESSE</a>
+          </li>
 
-        <li class="habilidades-conteudo fundo4">
-          <div class="habilidades-imagem">
-            <img src="./img/icones/servidor-sql.png" alt="html" width="35px">
+          <li class="projetos-conteudo fundo2">
+            <div class="projetos-imagem">
+              <img src="./img/Projetos/origamid.jpg" alt="html" width="335px">
+            </div>
+            <h3>Site Curso</h3>
+            <p>Site desenvolvido no término do curso de Reactjs. Nesse site foi utilizado componentes, router, hooks, useState, useEffect entre outros recursos da biblioteca. 
+            </p>
+            <a class="botao">ACESSE</a>
+          </li>
+        </ul>
+      </section>
+      
+      <section class="habilidades" id="habilidades" data-secao="habilidades">
+        <h2 class="secao-titulo">HABILIDADES</h2>
+        <ul>
+          <li>
+            <h4>HTML</h4>
+            <img src="./img/icones/html-5.png" alt="html">
+          </li>
+          <li>
+            <h4>CSS</h4>
+            <img src="./img/icones/css-3.png" alt="css">
+          </li>
+          <li>
+            <h4>JAVASCRIPT</h4>
+            <img src="./img/icones/js.png" alt="JAVASCRIPT">
+          </li>
+          <li>
+            <h4>REACT</h4>
+            <img src="./img/icones/reactjs.png" alt="reactjs">
+          </li>
+          <li>
+            <h4>SASS</h4>
+            <img src="./img/icones/sass.png" alt="sass">
+          </li>
+          <li>
+            <h4>SQL</h4>
+            <img src="./img/icones/servidor-sql.png" alt="">
+          </li>
+          <li>
+            <h4>GIT</h4>
+            <img src="./img/icones/git.png" alt="Git">
+          </li>
+          <li>
+            <h4>GITHUB</h4>
+            <img src="./img/icones/github.png " alt="github">
+          </li>
+          <li>
+            <h4>R</h4>
+            <img src="./img/icones/r.png" alt="linguagem R">
+          </li>
+          <li>
+            <h4>PYTHON</h4>
+            <img src="./img/icones/python.png" alt="python">
+          </li>
+        </ul>
+      </section>
+      
+      <footer class="contato" id="contato" data-secao="contato">
+        <h2 class="secao-titulo">CONTATO</h2>
+        <div class="contato-container">
+          <div class="container-dados">
+            <div class="dados">
+              <h3>Endereço</h3>
+              <p>Vila Conde do Pinhal, São Paulo - SP</p>
+              <p>04254-000</p>
+            </div>
+            <div class="dados">
+              <h3>Telefone</h3>
+              <p>(11) 97575-5752</p>
+            </div>
+            <div class="dados">
+              <h3>Mídias</h3>
+              <a href="https://www.linkedin.com//in/alexandrelaira" target="_blank"><img src="./img/medias/linkedin.png" alt="linkedin"></a>
+              <a href="https://www.github.com/alexandrelaira" target="_blank"><img src="./img/medias/github.png" alt="github"></a>
+            </div>
           </div>
-          <h3>SQL</h3>
-          <p>O SQL é uma linguagem padrão para manipulação de registros em bancos de dados relacionais. A sigla SQL vem dos termos em inglês “Structured Query Language”, que podem ser traduzidos para o português como “Linguagem de Consulta Estruturada”. 
-          </p>
-        </li>
-
-        <li class="habilidades-conteudo fundo5">
-          <div class="habilidades-imagem">
-            <img src="./img/icones/github.png" alt="html" width="35px">
+          <div class="formulario">
+            <h3>Agende uma entrevista</h3>
+            <form action="" method="post">
+              <input type="text" placeholder="Nome">
+              <input type="email" placeholder="Email">
+              <input type="text" placeholder="Telefone">
+              <textarea name="mensagem" id="mensagem" cols="30" rows="5" placeholder="Mensagem"></textarea>
+              <input class="botao" type="submit" value="Enviar">
+            </form>
           </div>
-          <h3>GIT / GITHUB</h3>
-          <p>Git e Github são utilizados no dia a dia das pessoas que criam softwares por um motivo bem simples: ter uma forma fácil de gerenciar o código-fonte da aplicação, do sistema e do produto. 
-          </p>
-        </li>
-
-
-
-
-
-      </ul>
-    </section>
-  </main>
-</body>
+        </div>
+      </footer>
+      <p class="marca">Codec Development&reg</p>
+    </main>
+  </body>
 </html>

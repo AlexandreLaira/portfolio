@@ -4,25 +4,28 @@
   width: 100%;
   font-size: 14px;
   font-weight: 400;
-  padding: 9px;
+  padding: 9px 0;
   color: var(--cor-botao);
   text-align: right;
-  padding-right: 21%;
-  position: relative;
 }
 
-.telefone::before{
+.telefone span::before{
   content: url('/img/icones/telefone.png');
-  top: 12px;
+  top: 3px;
   margin-left: -23px;
   position: absolute;
 }
 
-main{
-  background-image: url('/img/background-header2.jpg');
-  height: 90vh;
+.telefone span{ 
+  position: relative;
+  margin: 0 21%;
+}
+
+.inicio{
+  background-image: url('/img/background-header2.webp');
   background-size: cover;
   background-repeat: no-repeat;
+  padding-bottom: 20px;
 }
 
 .principal{
@@ -47,6 +50,20 @@ main{
   text-transform: uppercase;
 }
 
+.principal a{
+  background-color: transparent;
+  width: 0;
+  font-weight: 400;
+  padding: 0;
+  color: #fff;
+  text-decoration: none;
+  transition: color 200ms;
+}
+
+.principal a:hover{
+  color: var(--cor-botao);
+}
+
 .principal-titulo{
   max-width: 1400px;
   margin: 100px 21%;
@@ -58,7 +75,6 @@ main{
   max-width: 25ch;
   color: #fff;
   font-family: var(--font-principal);
-  margin: 45px 0;
 }
 
 .principal-titulo h2{
@@ -69,36 +85,11 @@ main{
   font-weight: 300;
 }
 
-.principal li:hover{
-  color: var(--cor-botao);
-  filter: brightness(1.3);
-  cursor: pointer;
-}
-
-.principal-titulo button{
-  background-color: var(--cor-botao);
-  border: none;
-  padding: 20px 50px;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
-.principal-titulo button:hover{
-  cursor: pointer;
-  filter: brightness(0.9);
-}
-
-.principal-titulo button a{
-  text-decoration: none;
-  color: #fff;
-}
-
-
 .principal p{
   font-size: 28px;
   position: relative;
   z-index: 1;
+  left: 15px;
 }
 
 .principal p::after{
@@ -118,4 +109,104 @@ main{
   z-index: -1;
   top: -15px;
   left: -15px;
+}
+
+
+@media screen and (width < 1100px) {
+
+  main{
+    height: 107vh;
+  }
+
+  .telefone span{ 
+    margin: 0 15%;
+  }
+
+  .principal {
+    margin: 0 15%;
+  }
+
+  .principal-titulo{
+    padding-top: 10px;
+    margin: 50px 15%;
+  }
+}
+
+@media screen and (width < 915px) {
+
+  main{
+    background-image: url('/img/android/background-main2.jpg');
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    max-height: 43vh;
+  }
+
+  .principal-titulo h1{
+    font-size: 32px;
+  }
+  
+  .principal ul{
+    gap: 12px;
+    font-size: 12px;
+  }
+}
+
+
+@media screen and (width < 850px) {
+
+  main{
+    background-image: url('/img/android/background-main2.jpg');
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    max-height: 50vh;
+  }
+
+  .principal-titulo h1{
+    font-size: 32px;
+  }
+  
+  .principal ul{
+    gap: 12px;
+    font-size: 12px;
+  }
+}
+
+
+@media screen and (width < 768px) {
+  .principal ul{
+    display: none;
+  }
+
+  .botao-mobile{
+    display: block;
+    width: 35px;
+    height: 4px;
+    background-color: #fcd29c;
+    /* border: 1px solid #c97f1e; */
+    position: relative;
+  }
+
+  .botao-mobile::after{
+    display: block;
+    content: '';
+    width: 35px;
+    height: 4px;
+    background-color: #fcd29c;
+    position: absolute;
+    top: 10px;
+  }
+
+  .botao-mobile::before{
+    display: block;
+    content: '';
+    width: 35px;
+    height: 4px;
+    background-color: #fcd29c;
+    position: absolute;
+    top: -10px;
+  }
 }

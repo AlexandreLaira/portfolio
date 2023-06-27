@@ -1,0 +1,69 @@
+
+
+.guia{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  text-align: right;
+  right: 0;
+  top: 30%;
+  margin: 0 12px;
+  gap: 15px;
+  z-index: 5;
+}
+
+.guia label{
+  padding-right: 10px;
+  color: var(--cor-botao);
+  transition: opacity 500ms;
+}
+
+.guia a{
+  background-color: transparent;
+  padding: 0;
+  font-weight: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+.guia input[type=radio]{
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--cor-botao);
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.guia input[type=radio]:hover{
+  cursor: pointer;
+}
+
+.guia input[type=radio]:hover label{
+  opacity: 1;
+}
+
+.guia label:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+
+.guia input[type=radio]:checked{
+  background-color: var(--cor-botao);
+}
+
+.checado{
+  opacity: 1;
+}
+
+.semcheck{
+  opacity: 0.2;
+}
+
+
+
+
+@media screen and (width < 1200px) {
+  .guia{
+    display: none;
+  }
+}

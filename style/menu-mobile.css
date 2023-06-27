@@ -1,0 +1,80 @@
+
+
+.menu-mobile{
+  position: absolute;
+  background: rgba(255, 255, 255, 0.9);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 20px;
+  width: 100vw;
+  z-index: 3;
+  display: none;
+  padding-top: 20px;
+}
+
+
+.menu-mobile p{
+  text-align: center;
+  color: #333;
+  font-weight: 700;
+}
+
+.menu-mobile ul{
+  display: block;
+  margin: 15px;
+
+}
+
+.menu-mobile li{  
+  list-style: none;
+  text-transform: uppercase;
+  padding: 15px;
+  text-align: center;
+}
+
+.menu-mobile a{
+  color: #333;
+  text-decoration: none;
+
+}
+
+.ativa-menu{
+  display: block;
+  animation: animaMenu 400ms;
+}
+
+.viraBotaoMenu{
+  transform:  translateY(-70px) rotate(45deg);
+  transition: transform 300ms;
+  background-color: #333;
+  z-index: 4;
+}
+
+.viraBotaoMenu::before{
+  transform: rotate(90deg);
+  background-color: #333;
+  top: 0;
+}
+
+.viraBotaoMenu::after{
+  transform: rotate(90deg);
+  background-color: #333;
+  top: 0;
+}
+
+
+@keyframes animaMenu{
+  from{
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+
+
