@@ -10,7 +10,7 @@
 }
 
 .telefone span::before{
-  content: url('/img/icones/telefone.png');
+  content: url('../img/icones/telefone.png');
   top: 3px;
   margin-left: -23px;
   position: absolute;
@@ -22,7 +22,7 @@
 }
 
 .inicio{
-  background-image: url('/img/background-header2.webp');
+  background-image: url('../img/background-header2.webp');
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 20px;
