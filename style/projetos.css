@@ -1,10 +1,11 @@
 .projetos{
-  background: linear-gradient(to bottom, #b4ceda 60%, transparent 40%);
+  background: linear-gradient(to bottom, #d5f3ff 60%, transparent 40%);
   padding: 50px;
 }
 
 .projetos-lista{
   display: flex;
+  flex-wrap: wrap;
   place-items: center;
   justify-content: center;
 }
@@ -80,27 +81,27 @@
 }
 
 .fundo2{
-  background-color: rgba(147, 181, 196, 1);
+  background-color: rgb(133, 163, 175);
 }
 
 .fundo3{
-  background-color: rgb(169, 196, 206);
+  background-color: rgb(167, 200, 212);
 }
 
 .fundo5{
   background-color: rgb(174, 189, 196);
 }
 
-@media screen and (width < 900px) {
-
-
-  
-}
-
-
 
 @media screen and (width < 768px) {
   .projetos-lista{
     flex-direction: column;
+  }
+}
+
+@media screen and (width < 420px) {
+
+  .projetos-lista{
+    max-width: 200px;
   }
 }
