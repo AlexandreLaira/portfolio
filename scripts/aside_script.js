@@ -67,11 +67,11 @@ function scrollSide(){
 
   function mudaInput(top){
 
-    if(top < secoes[1].offsetTop){
+    if(top < secoes[1].offsetTop - 100){
       input[0].checked = true;
       colocaDisplay(input[0], 0)
 
-    }else if(top > secoes[1].offsetTop - 50 && top < secoes[2].offsetTop - 100){
+    }else if(top > secoes[1].offsetTop -100 && top < secoes[2].offsetTop - 100){
       input[1].checked = true;
       colocaDisplay(input[1], 1)
 
