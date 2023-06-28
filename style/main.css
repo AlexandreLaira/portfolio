@@ -9,14 +9,19 @@
   text-align: right;
 }
 
-.telefone span::before{
+.telefone a{
+  color: var(--cor-botao);
+  text-decoration: none;
+}
+
+.telefone a::before{
   content: url('../img/icones/telefone.png');
   top: 3px;
   margin-left: -23px;
   position: absolute;
 }
 
-.telefone span{ 
+.telefone a{ 
   position: relative;
   margin: 0 21%;
 }
