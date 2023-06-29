@@ -61,12 +61,9 @@
 
 
 .projetos-imagem img{
-  /* width: 250px; */
   height: 250px;
   object-fit: cover;
   object-position: left;
-  /* padding: 6px; */
-  /* border-radius: 20px; */
 }
 
 

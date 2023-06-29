@@ -15,7 +15,6 @@
   max-width: 300px;
   position: relative;
   left: -100px;
-
 }
 
 .imagem img{
@@ -23,6 +22,7 @@
   object-fit: cover;
   object-position: top;
   z-index: 1;
+
 }
 
 .conteudo-sobre{
