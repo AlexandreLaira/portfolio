@@ -116,3 +116,16 @@ input[type='submit']{
     padding: 20px;
   }
 }
+
+@media screen and (width < 420px) {
+
+  .contato-container{
+    margin: 0;
+    padding: 0;
+  }
+
+  .formulario form{
+    padding: 0;
+    max-width: 100%;
+  }
+  }

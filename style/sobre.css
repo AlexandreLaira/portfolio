@@ -159,8 +159,8 @@
 
 @media screen and (width < 400px) {
 
-  .imagem{
-
+  .imagem img{
+    height: auto;
   }
 
   .conteudo-sobre{
@@ -168,7 +168,27 @@
     background-color: #fff;
     top: -30px;
     padding: 10px;
+    text-align: center;
   }
 
+
+}
+
+@media screen and (width < 360px) {
+
+  .sobre{
+    width: 100%;
+    height: auto;
+  }
+
+  .conteudo-sobre{
+    border: none;
+    background-color: #fff;
+    /* top: 30px; */
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 
 }

@@ -31,3 +31,11 @@
   color: white;
   text-align: center;
 }
+
+
+@media screen and (width < 350px) {
+  .habilidades{
+    padding: 10px;
+    margin: 0;
+  }
+}

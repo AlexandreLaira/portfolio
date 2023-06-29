@@ -101,7 +101,24 @@
 
 @media screen and (width < 420px) {
 
-  .projetos-lista{
-    max-width: 200px;
+  .projetos{
+    margin: 0;
+    padding: 0;
+    height: auto;
   }
+
+  .projetos-conteudo{
+    height: auto;
+    padding-bottom: 25px;
+    width: 100%;
+  }
+
+  .projetos-imagem{
+    width: 100%;
+  }
+
+  .projetos-imagem img{
+    width: 100%;
+  }
+
 }
