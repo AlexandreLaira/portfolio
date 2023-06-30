@@ -27,7 +27,7 @@
 }
 
 .inicio{
-  background-image: url('../img/background-header2.webp');
+  background: linear-gradient(rgba(237,147,31,0.1), rgba(0,0,0,0.3)), url('../img/background-header2.webp');
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 20px;
