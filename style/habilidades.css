@@ -11,8 +11,10 @@
 }
 .habilidades ul{
   display: flex;
+  grid-template-columns: repeat(4, 1fr);
   gap: 55px;
   flex-wrap: wrap;
+  text-align: center;
   justify-content: center;
   align-items: center;
   max-width: 500px;
@@ -25,6 +27,8 @@
 
 .habilidades img{
   width: 64px;
+  height: 64px;
+  object-fit: contain;
 }
 
 .habilidades h4{
