@@ -41,7 +41,7 @@ function scrollSide(){
 
   */
 
-  const topo = document.documentElement;
+  // const topo = document.documentElement;
   const input = document.querySelectorAll('.guia input[type=radio]');
   const secoes = document.querySelectorAll('[data-secao]');
   const label2 = document.querySelectorAll('.guia label');
@@ -61,7 +61,7 @@ function scrollSide(){
 
 
   function pegaTopo(){
-    const topoScroll = topo.scrollTop;
+    const topoScroll = window.scrollY;
     mudaInput(topoScroll)
   }
 
@@ -81,11 +81,11 @@ function scrollSide(){
       colocaDisplay(input[2], 2)
 
     }
-    else if(top > secoes[3].offsetTop -100 && top < 2320){
+    else if(top > secoes[3].offsetTop -100 && top < 2900){
       input[3].checked = true;
       colocaDisplay(input[3], 3)
 
-    }else if (top > 2320){
+    }else if (top > 3000){
       input[4].checked = true;
       colocaDisplay(input[4], 4)
 

@@ -1,6 +1,7 @@
 
 .telefone{
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
   width: 100%;
   font-size: 14px;
   font-weight: 400;
@@ -27,10 +28,11 @@
 }
 
 .inicio{
-  background: linear-gradient(rgba(237,147,31,0.1), rgba(0,0,0,0.3)), url('../img/background-header2.webp');
+  background: linear-gradient(rgba(237,147,31,0.3), rgba(0,0,0,0.6)), url('../img/background-header2.webp');
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 20px;
+  background-attachment: fixed;
 }
 
 .principal{
@@ -42,17 +44,20 @@
   margin: 0 21%;
   height: 130px;
   z-index: 1;
+  transition: all 600ms ease
 }
 
 .principal ul{
   display: flex;
-  gap: 20px;
-
+  gap: 60px;
+  opacity: 0;
+  transition: all 600ms ease;
 }
 
 .principal li{  
   list-style: none;
   text-transform: uppercase;
+  padding: 5px;
 }
 
 .principal a{
@@ -63,31 +68,64 @@
   color: #fff;
   text-decoration: none;
   transition: color 200ms;
+  font-family: var(--font-principal);
+  letter-spacing: .2rem;
 }
 
 .principal a:hover{
   color: var(--cor-botao);
 }
 
-.principal-titulo{
-  max-width: 1400px;
-  margin: 100px 21%;
+#contatoMenu{
+  background-color: var(--cor-botao);
+  padding: 15px;
+  transition: background-color 600ms ease;
+}
 
+#contatoMenu:hover{
+  background-color: #fff;
+}
+
+.principal-titulo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1400px;
+  margin: 12rem 21%;
+  position: relative;
+  opacity: 0;
+  transition: 600ms ease;
 }
 
 .principal-titulo h1{
-  font-size: 40px;
-  max-width: 12ch;
+  position: relative;
+  font-size: 4rem;
+  display: flex;
+  flex-direction: column;
   color: #fff;
+  font-family: var(--font-principal);
+  line-height: 1.4em;
+  letter-spacing: 0.3rem;
+  font-weight: 300;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.principal-titulo span{
   font-family: var(--font-principal);
 }
 
 .principal-titulo h2{
-  max-width: 50ch;
+  position: relative;
+  width: 50%;
   color: rgba(255, 255, 255, 0.9);
-  font-size: 16px;
+  font-size: clamp(.3rem, 1rem, 3rem);
   margin: 45px 0;
   font-weight: 300;
+  line-height: 3rem;
+  text-align: center;
+  margin: 0 auto 2rem;
+
 }
 
 .principal p{
@@ -95,13 +133,16 @@
   position: relative;
   z-index: 1;
   left: 15px;
-  font-family: var(--font-teste);
+  font-family: var(--font-principal);
+  letter-spacing: .2rem;
   font-weight: 300;
+  opacity: 0;
+  transition: all 600ms ease;
 }
 
 .principal p::after{
   content: 'Desenvolvedor Front-End';
-  font-size: 12px;
+  font-size: 13px;
   position: absolute;
   bottom: -15px;
   left: 0px;
@@ -110,32 +151,43 @@
 .principal p::before{
   content: '';
   width: 105px;
-  height: 105px;
+  height: 95px;
   background-color: var(--cor-botao);
+  box-shadow: inset -15px 0 25px rgb(186, 157, 118);
   position: absolute;
   z-index: -1;
   top: -15px;
   left: -15px;
 }
 
+#botao{
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
 
-@media screen and (width < 1100px) {
+
+@media screen and (width < 1300px) {
 
   main{
     height: 107vh;
   }
 
   .telefone a{ 
-    margin: 0 15%;
+    margin: 0 5%;
   }
 
   .principal {
-    margin: 0 15%;
+    margin: 0 5%;
   }
 
   .principal-titulo{
     padding-top: 10px;
     margin: 50px 15%;
+  }
+
+  .principal-titulo h2{
+    width: 100%;
   }
 }
 
@@ -222,9 +274,26 @@
   }
 }
 
-@media screen and (width < 420px) {
+@media screen and (width < 448px) {
 
   .principal{
     margin: 0 5%;
+  }
+
+  .principal-titulo{
+    margin: 0;
+  }
+
+  .principal-titulo h1{
+    margin-bottom: 0;
+  }
+
+  .principal-titulo h2{
+    width: 80%;
+    padding: 3rem 2rem;
+  }
+
+  #botao{
+    margin-bottom: 2rem;
   }
 }

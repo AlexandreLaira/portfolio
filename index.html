@@ -2,7 +2,7 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
@@ -63,17 +63,17 @@
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#projetos">Projetos</a></li>
             <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#contato">Contato</a></li>
+            <li><a id="contatoMenu" href="#contato">Contato</a></li>
           </ul>
         </nav>
-        <section class="principal-titulo" >
+        <section class="principal-titulo">
           <div>
-            <h1>Desenvolvedor Front-end</h1>
-            <h2>Olá, meu nome é Alexandre Laira e há pouco tempo descobri o que me motiva e resolvi realizar uma mudança de carreira.
+            <h1>Desenvolvedor <span>Front-end</span></h1>
+            <h2>Olá, meu nome é Alexandre e o que me motiva é agregar valor através da tecnologia e desenvolver soluções que facilite a vida das pessoas.
             Entre em contato e agende uma entrevista.
             </h2>
           </div>
-          <a class="botao" href="https://wa.me/5511975755752" target="_blank">whatsapp</a>
+          <a class="botao" id="botao" href="https://wa.me/5511975755752" target="_blank">whatsapp</a>
         </section>
       </header>
       
@@ -84,7 +84,7 @@
           </div>
           <div class="conteudo-sobre">
             <h2>Possuo experiência em diversas áreas</h2>
-            <p>Já trabalhei com rotinas administrativas e me vi apaixonado pela área de desenvolvimento. Em meus projetos utilizei gerenciamento de versões com o Git e o Github, além de ter trabalhado com análise de dados com Power BI e Excel e também com as linguagens de programação R e Python.</p>
+            <p>Já trabalhei com rotinas administrativas e me vi apaixonado pela área de desenvolvimento. Sou comprometido, assíduo, responsável. Prezo por boas relações onde a comunicação é algo fundamental. A experiência em outras áreas me proporcionou ter uma visão holística dos processos de uma empresa contribuindo para um melhor entendimento das regras de negócio. </p>
           </div>
         </div>
       </section>
@@ -117,7 +117,9 @@
       
       <section class="habilidades" id="habilidades" data-secao="habilidades">
         <h2 class="secao-titulo">HABILIDADES</h2>
-        <ul>
+
+        <div class="scroller">
+        <ul class="lista">
           <li>
             <h4>HTML</h4>
             <img src="./img/icones/html-5.png" alt="html">
@@ -171,6 +173,7 @@
             <img src="./img/icones/python.png" alt="python">
           </li>
         </ul>
+      </div>
       </section>
       
       <footer class="contato" id="contato" data-secao="contato">

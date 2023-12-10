@@ -2,65 +2,68 @@
 
 .menu-mobile{
   position: absolute;
-  background: rgba(255, 255, 255, 1);
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-bottom: 20px;
-  width: 60vw;
+  background: rgba(97, 60, 12, 0.6);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+
+  width: 70vw;
   height: 100vh;
   z-index: 3;
-  display: none;
-  padding-top: 20px;
+  right: 0;
+  top: 37px;
+  padding: 60px 0;
+
+  transition: inset 400ms ease-out;
+  inset: 37px 100%;
+
+  box-shadow: 1px 1px 2px rgba(255, 255, 255, .6);
 }
 
 
 .menu-mobile p{
-  /*text-align: center;*/
-  color: #333;
+  color: #fff;
   font-weight: 700;
-  margin-left: 15px;
+  font-family: var(--font-principal);
+  letter-spacing: .14rem;
+  padding-left: 30px;
 }
 
 .menu-mobile ul{
   display: block;
   margin: 15px;
-
 }
 
 .menu-mobile li{  
   list-style: none;
   text-transform: uppercase;
   padding: 15px;
-  /*text-align: center;*/
 }
 
 .menu-mobile a{
-  color: #333;
+  color: #fff;
   text-decoration: none;
+  font-family: var(--font-principal);
 
 }
 
 .ativa-menu{
-  display: block;
-  animation: animaMenu 600ms ease;
+  inset: 37px 30%;
 }
 
 .viraBotaoMenu{
   transform: rotate(45deg);
   transition: transform 300ms;
-  background-color: #333;
   z-index: 4;
 }
 
 .viraBotaoMenu::before{
   transform: rotate(90deg);
-  /*background-color: #333;*/
+  background-color: #fcd29c;
   top: 0;
 }
 
 .viraBotaoMenu::after{
-  /*transform: rotate(90deg);*/
-  /*background-color: #333;*/
+  background-color: #fcd29c;
   top: 0;
 }
 
