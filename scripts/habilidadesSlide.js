@@ -18,7 +18,7 @@ function habilidadeSlide(){
     })
   }
   
-  if(window.matchMedia("(prefers-reduced-motion: reduce)").matches){
+  if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches){
     addAnimation();
   }
   
