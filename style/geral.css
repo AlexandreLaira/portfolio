@@ -35,25 +35,20 @@ body{
   padding: 20px 50px;
   text-decoration: none;
   color: #fff;
-  background: linear-gradient(#ED931F, #d98211);
+  /* background: linear-gradient(#ED931F, #d98211); */
+  background-color: #ED931F;
   border: none;
   color: #fff;
   text-transform: uppercase;
   font-weight: 600;
-  transition: filter 200ms ease-in;
+  transition: background 600ms ease-in;
 }
 
 .botao:hover{
   cursor: pointer;
-  /* background: linear-gradient(#e08a1a, #ce7a0c); */
-  filter: brightness(.9);
+  background: #fff;
+  color: var(--cor-botao);
 }
-
-/* a:active,
-a:visited{
-  color: inherit;
-  text-decoration: none;
-} */
 
 li{
   list-style: none;

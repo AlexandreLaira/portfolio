@@ -57,6 +57,38 @@
   font-size: 14px;
   line-height: 2.3em;
   color: rgba(0, 0, 0, 0.7);
+  padding-bottom: 2rem;
+}
+
+.curriculo{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1.3rem;
+
+  margin: 2rem 0;
+  position: relative;
+
+}
+
+.curriculo:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.curriculo:hover::before{
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 @media screen and (width < 1350px) {
