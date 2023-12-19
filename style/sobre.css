@@ -64,7 +64,6 @@
   text-decoration: none;
   color: rgba(0, 0, 0, 0.7);
   font-size: 1.3rem;
-
   margin: 2rem 0;
   position: relative;
 
@@ -105,7 +104,6 @@
 
   .conteudo-sobre{
     margin-right: 50px;
-    
   }
   
 }
@@ -128,7 +126,6 @@
 @media screen and (width < 965px) {
 
   .sobre{
-    /* margin: 30px 10%; */
     padding-bottom: 0;
     margin-bottom: 0;
   }
@@ -202,7 +199,7 @@
   
 }
 
-@media screen and (width < 448px) {
+@media screen and (width < 448px) and (orientation: landscape) {
 
   .sobre{
     margin: 0;
@@ -210,41 +207,33 @@
     left: 0;
     right: 0;
   }
-
-  .conteudo-sobre{
-    margin: 0;
-    padding: 0;
-    left: 0;
-    right: 0;
-  }
-
   .imagem img,
   .imagem{
     padding: 0;
     margin-left: 0;
     right: 0;
-    left: -50px;
     object-fit: cover;
   }
-
-
   .conteudo-sobre{
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
     border: none;
     background-color: #fff;
     top: -11px;
     padding: 15px;
-    text-align: center;
+    text-align: left;
   }
 
   .conteudo-sobre h2::before{
-    left: 30px;
+    left: -15px;
+    top: -5px;
   }
-
-
 
 }
 
-@media screen and (width < 360px) {
+@media screen and (width < 360px) and (orientation: landscape) {
 
   .sobre{
     width: 100%;

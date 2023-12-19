@@ -34,6 +34,7 @@
   color: #fff;
   display: flex;
   flex-wrap: nowrap;
+  overflow: hidden;
 }
 
 .card > .icon{
@@ -96,8 +97,6 @@ input:checked + label .row{
   transition: scale 300ms ease-out;
 }
 
-
-
 .projetos-conteudo h3{
   margin: 2rem;
   text-align: right;
@@ -159,6 +158,23 @@ input:checked + label .row{
   
 }
 
+@media (width < 768px) and (orientation: landscape){
+  .card{
+    width: 350px;
+    height: 110px;
+    transition: 600ms cubic-bezier(.28, -.03, 0, .99);
+  }
+
+  .card .icon{
+    display: none;
+  }
+
+  input:checked + label{
+    height: auto;
+    filter: blur(0px) brightness(1);
+  }
+}
+
 @media screen and (width < 420px) {
 
   .card{
@@ -178,8 +194,8 @@ input:checked + label .row{
 
 }
 
-@media screen and (width < 300px) {
+@media screen and (width < 300px) and (orientation: landscape) {
   .projetos-conteudo p{
-    font-size: 12px;
+    font-size: 14px;
   }
 }
