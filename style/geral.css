@@ -31,11 +31,9 @@ body{
 }
 
 .botao{
-  /* display: none; */
   padding: 20px 50px;
   text-decoration: none;
   color: #fff;
-  /* background: linear-gradient(#ED931F, #d98211); */
   background-color: #ED931F;
   border: none;
   color: #fff;
