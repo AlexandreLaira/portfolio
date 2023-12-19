@@ -172,7 +172,6 @@ input:checked + label .row{
   }
 
   input:checked + label{
-    width: 100%;
     height: auto;
     filter: blur(0px) brightness(1);
   }
