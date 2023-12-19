@@ -1,6 +1,6 @@
 .sobre{
   padding: 5rem 0;
-  /* background: linear-gradient(rgba(248, 159, 44, 0.1), rgba(0,0,0,0.2)); */
+  background: linear-gradient(rgba(248, 159, 44, 0.1), rgba(0,0,0,0.2));
 
 }
 
@@ -24,6 +24,7 @@
   object-position: top;
   z-index: -1;
   position: relative;
+  filter: brightness(.7) contrast(1.2);
   }
 
 .conteudo-sobre{
@@ -47,7 +48,7 @@
   content: '';
   width: 35px;
   height: 35px;
-  background-color: rgba(255, 166, 0, 0.8);
+  background-color: var(--cor-botao);
   position: absolute;
   top: 1.3rem;
   left: -1rem;

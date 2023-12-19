@@ -13,7 +13,7 @@
 }
 
 .contato h2{
-  color: rgba(147,181,196, 1);
+  color: var(--gray-7);
 }
 
 footer h3{

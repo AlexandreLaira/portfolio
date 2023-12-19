@@ -7,7 +7,7 @@
 }
 
 .habilidades h2{
-  color: white;
+  color: var(--gray-1);
 }
 
 .lista{

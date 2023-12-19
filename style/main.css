@@ -1,17 +1,16 @@
 
 .telefone{
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(8px);
   width: 100%;
   font-size: 14px;
   font-weight: 400;
   padding: 9px 0;
-  color: var(--cor-botao);
   text-align: right;
 }
 
 .telefone a{
-  color: var(--cor-botao);
+  color: var(--gray-1);
   text-decoration: none;
 }
 
@@ -28,7 +27,7 @@
 }
 
 .inicio{
-  background: linear-gradient(rgba(237,147,31,0.3), rgba(0,0,0,0.6)), url('../img/background-header2.webp');
+  background: linear-gradient(rgba(36, 40, 48, 0.4), rgba(23, 29, 39, 0.8)), url('../img/background-header2.webp');
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 20px;
@@ -188,6 +187,7 @@
   justify-content: center;
   position: relative;
   transition: background 600ms ease-in;
+  margin-top: 2rem;
 }
 
 @media screen and (width < 1200px) and (orientation: landscape){
@@ -245,13 +245,12 @@
 
 @media screen and (width <= 955px) {
 
-  main{
-    background-image: url('/img/android/background-main2.jpg');
-    height: auto;
-    background-size: contain;
+  .inicio{
+    background: linear-gradient(rgba(39, 45, 54, 0.3), rgba(11, 15, 20, 0.9)), url('/img/android/bg-main-mobile.webp');
+    height: 100vh;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    max-height: 43vh;
   }
 
   .principal-titulo h1{
@@ -265,15 +264,6 @@
 
 
 @media screen and (width < 850px) {
-
-  main{
-    background-image: url('/img/android/background-main2.jpg');
-    height: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    max-height: 50vh;
-  }
 
   .principal-titulo h1{
     font-size: 32px;
@@ -304,7 +294,7 @@
     display: block;
     width: 35px;
     height: 4px;
-    background-color: #fcd29c;
+    background-color: var(--cor-botao);
     /* border: 1px solid #c97f1e; */
     position: relative;
   }
@@ -314,7 +304,7 @@
     content: '';
     width: 35px;
     height: 4px;
-    background-color: #fcd29c;
+    background-color: var(--cor-botao);
     position: absolute;
     top: 10px;
   }
@@ -324,7 +314,7 @@
     content: '';
     width: 35px;
     height: 4px;
-    background-color: #fcd29c;
+    background-color: var(--cor-botao);
     position: absolute;
     top: -10px;
   }
@@ -336,6 +326,10 @@
 }
 
 @media screen and (width < 448px) {
+
+  .inicio{
+    height: 85vh;
+  }
 
   .principal-titulo{
     padding: 0;
@@ -355,5 +349,15 @@
 
   #botao{
     margin-bottom: 2rem;
+  }
+}
+
+@media screen and (width <= 300px) {
+  .inicio{
+    height: 100vh;
+  }
+
+  #botao{
+    margin-top: 0;
   }
 }
