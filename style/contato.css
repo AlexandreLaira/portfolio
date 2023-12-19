@@ -106,14 +106,12 @@ input[type='submit']{
 
   .formulario form{
     margin: 0 auto;
-    align-items: center;
+    align-items: end;
     justify-content: center;
   }
 
   input[type='submit']{
-    width: 100%;
-    justify-content: center;
-    padding: 20px;
+    width: 40%;
   }
 }
 
@@ -122,10 +120,16 @@ input[type='submit']{
   .contato-container{
     margin: 0;
     padding: 0;
+    width: 96%;
   }
 
   .formulario form{
     padding: 0;
-    max-width: 100%;
+    margin: 0;
+    width: 96%;
+  }
+
+  input[type='submit']{
+    width: 100%;
   }
   }

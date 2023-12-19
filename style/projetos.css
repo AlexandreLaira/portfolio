@@ -150,7 +150,7 @@ input:checked + label .row{
 }
 
 
-@media screen and (width < 768px) {
+@media screen and (width <= 769px) {
   .projetos-lista{
     flex-direction: column;
   }
@@ -158,7 +158,7 @@ input:checked + label .row{
   
 }
 
-@media (width < 768px) and (orientation: landscape){
+@media (width <= 769px) and (orientation: landscape){
   .card{
     width: 350px;
     height: 110px;
@@ -211,8 +211,8 @@ input:checked + label .row{
 
 }
 
-@media screen and (width < 300px) and (orientation: landscape) {
+@media screen and (width < 300px){
   .projetos-conteudo p{
-    font-size: 14px;
+    width: 80%;
   }
 }

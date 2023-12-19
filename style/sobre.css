@@ -250,7 +250,7 @@
 
   .imagem,
   .imagem img{
-    left: -73px;
+    left: -30px;
   }
 
   .conteudo-sobre{
@@ -268,8 +268,12 @@
   .conteudo-sobre h2{
     padding: 1rem;
     margin: 0 auto;
-    width: 100%;
+    width: 80%;
     left: -15px;
+  }
+
+  .conteudo-sobre p{
+    width: 95%;
   }
 
 }
