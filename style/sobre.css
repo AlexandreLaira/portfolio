@@ -199,7 +199,7 @@
   
 }
 
-@media screen and (width < 448px) and (orientation: landscape) {
+@media screen and (width < 448px) {
 
   .sobre{
     margin: 0;
@@ -223,6 +223,10 @@
     background-color: #fff;
     top: -11px;
     padding: 15px;
+    text-align: center;
+  }
+
+  .conteudo-sobre h2{
     text-align: left;
   }
 
@@ -231,9 +235,13 @@
     top: -5px;
   }
 
+  .conteudo-sobre p{
+    text-align: left;
+  }
+
 }
 
-@media screen and (width < 360px) and (orientation: landscape) {
+@media screen and (width < 360px){
 
   .sobre{
     width: 100%;
