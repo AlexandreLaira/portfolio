@@ -167,7 +167,8 @@
   content: 'Desenvolvedor Front-End';
   font-size: clamp(.9rem, 2vw, 1rem);
   position: absolute;
-  bottom: -15px;
+  bottom: -35px;
+  width: 15ch;
   left: 0px;
 }
 
@@ -189,7 +190,22 @@
   transition: background 600ms ease-in;
 }
 
-@media screen and (width < 1500px) {
+@media screen and (width < 1200px) and (orientation: landscape){
+  .principal p{
+    font-size: 18px;
+  }
+
+  .principal p::after{
+    font-size: 13px;
+  }
+
+  .principal p::before{
+    width: 75px;
+    height: 85px;
+  }
+}
+
+@media screen and (width <= 1550px) {
 
   .telefone a{
     margin: 0 15%;
