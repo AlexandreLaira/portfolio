@@ -1,22 +1,28 @@
 
 
 .menu-mobile{
-  position: absolute;
-  background: rgba(3, 7, 18, .6);
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(3px);
+  position: fixed;
+  /* background: rgba(0,0,0,.95); */
+  /* background: hsla(0 0% 0% / .75 ); */
 
   width: 70vw;
-  height: 100vh;
+  /* height: 100vh; */
   z-index: 3;
-  right: 0;
+  /* right: 0; */
   top: 37px;
   padding: 60px 0;
 
   transition: inset 400ms ease-out;
-  inset: 37px 100%;
+  inset: 0 -30% 0 0;
 
-  box-shadow: 1px 1px 2px rgba(255, 255, 255, .6);
+  /* box-shadow: 1px 1px 2px rgba(255, 255, 255, .6); */
+}
+
+@supports (backdrop-filter: blur(1em)){
+  .menu-mobile{
+    background: hsla(0, 0, 100%, .1);
+    backdrop-filter: blur(1em);
+  }
 }
 
 
@@ -47,7 +53,7 @@
 }
 
 .ativa-menu{
-  inset: 37px 30%;
+  inset: 0 0 0 30%;
 }
 
 .viraBotaoMenu{
