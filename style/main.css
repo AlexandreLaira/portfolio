@@ -154,19 +154,18 @@
 }
 
 .principal p{
-  font-size: 28px;
+  font-size: clamp(1.4rem, 3.7vw, 1.7rem);
   position: relative;
   z-index: 1;
   left: 15px;
   font-family: var(--font-principal);
   letter-spacing: .2rem;
   font-weight: 300;
-  opacity: 0;
 }
 
 .principal p::after{
   content: 'Desenvolvedor Front-End';
-  font-size: 13px;
+  font-size: clamp(.9rem, 2vw, 1rem);
   position: absolute;
   bottom: -15px;
   left: 0px;
@@ -199,9 +198,6 @@
   .principal{
     margin: 0 15%;
   }
-  .principal p{
-    font-size: 25px;
-  }
 }
 
 
@@ -231,7 +227,7 @@
 
 }
 
-@media screen and (width < 955px) {
+@media screen and (width <= 955px) {
 
   main{
     background-image: url('/img/android/background-main2.jpg');
@@ -247,7 +243,6 @@
   }
   
   .principal ul{
-    gap: 12px;
     font-size: 12px;
   }
 }
@@ -272,10 +267,15 @@
     gap: 12px;
     font-size: 12px;
   }
+
+  .principal p::after{
+    width: 15ch;
+    top: 30px;
+  }
 }
 
 
-@media screen and (width < 768px) {
+@media screen and (width <= 769px) {
   .principal ul{
     display: none;
   }
@@ -312,25 +312,24 @@
     position: absolute;
     top: -10px;
   }
+
+  .principal p::after{
+    width: 15ch;
+    top: 25px;
+  }
 }
 
 @media screen and (width < 448px) {
 
-  .principal{
-    margin: 0 5%;
-  }
-
-  .principal-titulo{
-    margin: 0;
-  }
-
-  .principal-titulo h1{
-    margin-bottom: 0;
-  }
-
   .principal-titulo h2{
-    width: 80%;
-    padding: 3rem 2rem;
+    width: 100%;
+    text-align: left;
+    line-height: 1.8;
+  }
+
+  .principal p::after{
+    width: 15ch;
+    top: 30px;
   }
 
   #botao{
