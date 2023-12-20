@@ -226,12 +226,12 @@
     object-fit: cover;
   }
   .conteudo-sobre{
-    margin: 0;
+    top: -11px;
+    /* margin: 0;
     padding: 0;
     border: none;
-    top: -11px;
     padding: 15px;
-    text-align: center;
+    text-align: center; */
   }
 
   .conteudo-sobre h2{
@@ -264,7 +264,6 @@
   .conteudo-sobre{
     text-align: center;
     border: none;
-    background-color: #fff;
     width: 100%;
     display: flex;
     flex-direction: column;
