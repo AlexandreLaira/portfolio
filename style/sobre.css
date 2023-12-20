@@ -48,7 +48,7 @@
   content: '';
   width: 35px;
   height: 35px;
-  background-color: var(--cor-botao);
+  background-color: var(--red-6);
   position: absolute;
   top: 1.3rem;
   left: -1rem;
@@ -62,12 +62,12 @@
 }
 
 .curriculo{
+  display: block;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.7);
   font-size: 1.3rem;
   margin: 2rem 0;
   position: relative;
-
 }
 
 .curriculo:before{
@@ -190,7 +190,6 @@
     right: 0;
     text-align: center;
     background: #fff;
-    z-index: -1;
     margin-top: -180px;
   }
 
