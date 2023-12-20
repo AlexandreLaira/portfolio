@@ -39,13 +39,15 @@
   list-style: none;
   text-transform: uppercase;
   padding: 15px 0;
+  font-size: 14px;
 }
 
 .menu-mobile a{
   color: var(--gray-1);
   text-decoration: none;
   font-family: var(--font-principal);
-
+  letter-spacing: .2rem;
+  font-weight: 300;
 }
 
 .menu-mobile span{

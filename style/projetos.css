@@ -179,7 +179,7 @@ input:checked + label .icon{
   }
 
   input:checked + label{
-    height: auto;
+    height: 600px;
     filter: blur(0px) brightness(1);
   }
 }
