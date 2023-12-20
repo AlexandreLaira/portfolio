@@ -17,8 +17,7 @@
   background-size: cover;
   overflow: hidden;
   transition: 600ms cubic-bezier(.28, -.03, 0, .99);
-  margin: 5px;
-  transform: scale(.98);
+  margin: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,7 +37,8 @@
 }
 
 .card > .icon{
-  background-color: rgba(34, 34, 51, 0.651);
+  /* background-color: rgba(34, 34, 51, 0.651); */
+  background-color: var(--gray-7);
   color: #fff;
   padding: 5px 0px;
   width: 100%;
@@ -46,6 +46,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  filter: brightness(.6);
 }
 
 #c1, #c2, #c3, #c4{
@@ -61,6 +62,10 @@ input:checked + label .row{
   opacity: 1 !important;
   transform: translateY(0) !important;
   filter: blur(0px) brightness(1);
+}
+
+input:checked + label .icon{
+  filter: brightness(1);
 }
 
 
@@ -94,7 +99,6 @@ input:checked + label .row{
   align-items: center;
   color: #FAFAFA;
   transition: transform 300ms;
-  transform: scale(.95);
   transition: scale 300ms ease-out;
 }
 
@@ -166,6 +170,10 @@ input:checked + label .row{
     transition: 600ms cubic-bezier(.28, -.03, 0, .99);
   }
 
+  .card > .row{
+    filter: blur(0) brightness(.8);
+  }
+
   .card .icon{
     display: none;
   }
@@ -179,13 +187,13 @@ input:checked + label .row{
 @media screen and (width <= 769px) {
   .card{
     width: 350px;
-    height: 110px;
-    transition: 600ms cubic-bezier(.28, -.03, 0, .99);
+    height: 150px;
   }
 
-  .card .icon{
-    display: none;
+  .card > .row{
+    filter: blur(0) brightness(.6);
   }
+
 
   input:checked + label{
     height: auto;
@@ -199,10 +207,6 @@ input:checked + label .row{
     width: 350px;
     height: 110px;
     transition: 600ms cubic-bezier(.28, -.03, 0, .99);
-  }
-
-  .card .icon{
-    display: none;
   }
 
   input:checked + label{

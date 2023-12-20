@@ -27,7 +27,9 @@
 }
 
 .inicio{
-  background: linear-gradient(rgba(36, 40, 48, 0.4), rgba(23, 29, 39, 0.8)), url('../img/background-header2.webp');
+  /* background: linear-gradient(rgba(20, 1, 1, 0.9), rgba(0, 0, 0, 0.4)), url('../img/bg-inicial-desktop.webp'); */
+  background: linear-gradient(rgba(39, 45, 54, 0.3), rgba(11, 15, 20, 0.9)), url('../img/bg-inicial-desktop.webp');
+  backdrop-filter: contrast(140%);
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 20px;
@@ -247,6 +249,7 @@
 
   .inicio{
     background: linear-gradient(rgba(39, 45, 54, 0.3), rgba(11, 15, 20, 0.9)), url('../img/android/bg-main-mobile.webp');
+    /* background: linear-gradient(rgba(20, 1, 1, 0.9), rgba(0, 0, 0, 0.4)), url('../img/android/bg-main-mobile.webp'); */
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
