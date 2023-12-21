@@ -6,7 +6,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <script type="module" src="./scripts/scripts.js" defer></script>
     <link rel="stylesheet" href="./style/style.css">
     <meta name="description" content="Portfólio front-end para apresentação dos projetos desenvolvidos na área.">
     <title>Portfólio - Alexandre Laira</title>
@@ -17,33 +16,32 @@
         <label class="" for="aside_inicio"><a href="#inicio">INICIO</a></label>
         <input checked type="radio" name="secao" id="aside_inicio" value="inicio">
       </div>
-
+      
       <div>
         <label class="semcheck" for="aside_sobre"><a href="#sobre">SOBRE</a></label>
         <input type="radio" name="secao" id="aside_sobre" value="sobre">
       </div>
-
+      
       <div>
         <label class="semcheck" for="aside_projetos"><a href="#projetos">PROJETOS</a></label>
         <input type="radio" name="secao" id="aside_projetos" value="projetos">
       </div>
-
+      
       <div>
         <label class="semcheck" for="aside_habilidades"><a href="#habilidades">HABILIDADES</a></label>
         <input type="radio" name="secao" id="aside_habilidades" value="habilidades">
       </div>
-
+      
       <div>
         <label class="semcheck" for="aside_contato"><a href="#contato">CONTATO</a></label>
         <input type="radio" name="secao" id="aside_contato" value="contato">
       </div>
     </aside>
-
+    
     
     <main>
       <header class="inicio" data-secao="inicio" id="inicio">
-        <nav class="menu-mobile" data-menu="lista">
-          <!-- <p>MENU</p> -->
+        <nav class="menu-mobile" data-menu="lista" aria-expanded="false">
           <ul>
             <li data-listaMobile><a href="#sobre"><span aria-hidden="true">01</span>Sobre</a></li>
             <li data-listaMobile><a href="#projetos"><span aria-hidden="true">02</span>Projetos</a></li>
@@ -70,7 +68,7 @@
           <div>
             <h1>Desenvolvedor <span>Front-end</span></h1>
             <h2>Olá, meu nome é Alexandre e o que me motiva é agregar valor através da tecnologia e desenvolver soluções que facilite a vida das pessoas.
-            Entre em contato, vamos conversar.
+              Entre em contato, vamos conversar.
             </h2>
           </div>
           <a class="botao" id="botao" href="https://wa.me/5511975755752" target="_blank">whatsapp</a>
@@ -92,9 +90,10 @@
         </div>
       </section>
       <!-- FIM SOBRE -->
-
+      
       <!-- PROJETOS -->
       <section class="projetos" id="projetos" data-secao="projetos">
+        <!-- <img src="./img/bg-projetos.jpg" class="bg-projetos" data-bg="folhas"> -->
         <h2 class="secao-titulo">PROJETOS</h2>
         
         <ul class="projetos-lista">
@@ -111,7 +110,7 @@
               <a class="botao" href="https://www.deliciasdana.com.br" target="_blank">ACESSE</a>
             </li>
           </label>
-
+          
           <input type="radio" name="slide" id="c2" >
           <label for="c2" class="card">
             <div class="icon">2</div>
@@ -125,7 +124,7 @@
               <a class="botao" href="https://consumo-api-seven.vercel.app/" target="_blank">ACESSE</a>
             </li>
           </label>
-
+          
           <input type="radio" name="slide" id="c3">
           <label for="c3" class="card">
             <div class="icon">3</div>
@@ -139,124 +138,125 @@
               <a class="botao" href="https://login-cadastro-neon.vercel.app/" target="_blank">ACESSE</a>
             </li>
           </label>
-
-          <!-- <input type="radio" name="slide" id="c4">
-          <label for="c4" class="card">
-            <div class="icon">4</div>
-            <li class="projetos-conteudo fundo4 row">
-              <div class="projetos-imagem">
-                <img src="./img/Projetos/miniProjetos.webp" alt="pequenos projetos" width="335px">
+          
+          <input type="radio" name="slide" id="c4">
+            <label for="c4" class="card">
+              <div class="icon"><span>4</span></div>
+              <li class="projetos-conteudo fundo4 row">
+                <div class="projetos-imagem">
+                  <img src="./img/Projetos/parallax.webp" alt="projeto parallax" width="335px">
+                </div>
+                <h3>Parallax</h3>
+                <p>Página abordando conceitos de parallax, utilizando Javascript puro, CSS e HTML. 
+                </p>
+                <a href="https://parallax-rho-two.vercel.app/" class="botao" target="_blank">ACESSE</a>
+              </li>
+            </label>
+            
+          </ul>
+        </section>
+        <!-- FIM PROJETOS -->
+        
+        <!-- HABILIDADES -->
+        <section class="habilidades" id="habilidades" data-secao="habilidades">
+          <h2 class="secao-titulo">HABILIDADES</h2>
+          
+          <div class="scroller">
+            <ul class="lista">
+              <li>
+                <h4>HTML</h4>
+                <img src="./img/icones/html-5.png" alt="html">
+              </li>
+              <li>
+                <h4>CSS</h4>
+                <img src="./img/icones/css-3.png" alt="css">
+              </li>
+              <li>
+                <h4>JAVASCRIPT</h4>
+                <img src="./img/icones/js.png" alt="JAVASCRIPT">
+              </li>
+              <li>
+                <h4>NEXT JS</h4>
+                <img src="./img/icones/nextjs.png" alt="NEXT JS">
+              </li>
+              <li>
+                <h4>TAILWIND</h4>
+                <img src="./img/icones/tailwind.png" alt="TAILWIND">
+              </li>
+              <li>
+                <h4>REACT</h4>
+                <img src="./img/icones/reactjs.png" alt="reactjs">
+              </li>
+              <li>
+                <h4>SASS</h4>
+                <img src="./img/icones/sass.png" alt="sass">
+              </li>
+              <li>
+                <h4>SQL</h4>
+                <img src="./img/icones/servidor-sql.png" alt="">
+              </li>
+              <li>
+                <h4>GIT</h4>
+                <img src="./img/icones/git.png" alt="Git">
+              </li>
+              <li>
+                <h4>STYLED-COMPONENTS</h4>
+                <img src="./img/icones/styledComponents.png" alt="STYLED-COMPONENTS">
+              </li>
+              <li>
+                <h4>GITHUB</h4>
+                <img src="./img/icones/github.png " alt="github">
+              </li>
+              <li>
+                <h4>R</h4>
+                <img src="./img/icones/r.png" alt="linguagem R">
+              </li>
+              <li>
+                <h4>PYTHON</h4>
+                <img src="./img/icones/python.png" alt="python">
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- FIM HABILIDADES -->
+        
+        <!-- CONTATO -->
+        <footer class="contato" id="contato" data-secao="contato">
+          <h2 class="secao-titulo">CONTATO</h2>
+          <div class="contato-container">
+            <div class="container-dados">
+              <div class="dados">
+                <h3>Endereço</h3>
+                <p>Ipiranga, São Paulo - SP</p>
+                <p>04254-000</p>
               </div>
-              <h3>Mini Projetos</h3>
-              <p>Pequenos projetos utilizando HTML, CSS e Javascript (Vanilla) para aprimorar. 
-              </p>
-              <a href="https://github.com/AlexandreLaira/Mini-Projetos" class="botao" target="_blank">ACESSE</a>
-            </li>
-          </label> -->
-
-        </ul>
-      </section>
-      <!-- FIM PROJETOS -->
-
-      <!-- HABILIDADES -->
-      <section class="habilidades" id="habilidades" data-secao="habilidades">
-        <h2 class="secao-titulo">HABILIDADES</h2>
-
-        <div class="scroller">
-        <ul class="lista">
-          <li>
-            <h4>HTML</h4>
-            <img src="./img/icones/html-5.png" alt="html">
-          </li>
-          <li>
-            <h4>CSS</h4>
-            <img src="./img/icones/css-3.png" alt="css">
-          </li>
-          <li>
-            <h4>JAVASCRIPT</h4>
-            <img src="./img/icones/js.png" alt="JAVASCRIPT">
-          </li>
-          <li>
-            <h4>NEXT JS</h4>
-            <img src="./img/icones/nextjs.png" alt="NEXT JS">
-          </li>
-          <li>
-            <h4>TAILWIND</h4>
-            <img src="./img/icones/tailwind.png" alt="TAILWIND">
-          </li>
-          <li>
-            <h4>REACT</h4>
-            <img src="./img/icones/reactjs.png" alt="reactjs">
-          </li>
-          <li>
-            <h4>SASS</h4>
-            <img src="./img/icones/sass.png" alt="sass">
-          </li>
-          <li>
-            <h4>SQL</h4>
-            <img src="./img/icones/servidor-sql.png" alt="">
-          </li>
-          <li>
-            <h4>GIT</h4>
-            <img src="./img/icones/git.png" alt="Git">
-          </li>
-          <li>
-            <h4>STYLED-COMPONENTS</h4>
-            <img src="./img/icones/styledComponents.png" alt="STYLED-COMPONENTS">
-          </li>
-          <li>
-            <h4>GITHUB</h4>
-            <img src="./img/icones/github.png " alt="github">
-          </li>
-          <li>
-            <h4>R</h4>
-            <img src="./img/icones/r.png" alt="linguagem R">
-          </li>
-          <li>
-            <h4>PYTHON</h4>
-            <img src="./img/icones/python.png" alt="python">
-          </li>
-        </ul>
-      </div>
-      </section>
-      <!-- FIM HABILIDADES -->
-
-      <!-- CONTATO -->
-      <footer class="contato" id="contato" data-secao="contato">
-        <h2 class="secao-titulo">CONTATO</h2>
-        <div class="contato-container">
-          <div class="container-dados">
-            <div class="dados">
-              <h3>Endereço</h3>
-              <p>Ipiranga, São Paulo - SP</p>
-              <p>04254-000</p>
+              <div class="dados">
+                <h3>Telefone</h3>
+                <p>(11) 97575-5752</p>
+              </div>
+              <div class="dados">
+                <h3>Mídias</h3>
+                <a href="https://www.linkedin.com/in/alexandrelaira" target="_blank"><img src="./img/medias/linkedin.png" alt="linkedin"></a>
+                <a href="https://www.github.com/alexandrelaira" target="_blank"><img src="./img/medias/github.png" alt="github"></a>
+                <a href="https://wa.me/5511975755752" target="_blank"><img src="./img/medias/whatsapp.png" alt="whatsapp"></a>
+              </div>
             </div>
-            <div class="dados">
-              <h3>Telefone</h3>
-              <p>(11) 97575-5752</p>
-            </div>
-            <div class="dados">
-              <h3>Mídias</h3>
-              <a href="https://www.linkedin.com/in/alexandrelaira" target="_blank"><img src="./img/medias/linkedin.png" alt="linkedin"></a>
-              <a href="https://www.github.com/alexandrelaira" target="_blank"><img src="./img/medias/github.png" alt="github"></a>
-              <a href="https://wa.me/5511975755752" target="_blank"><img src="./img/medias/whatsapp.png" alt="whatsapp"></a>
+            <div class="formulario">
+              <h3>Agende uma entrevista</h3>
+              <form action="https://formsubmit.co/alexandrelairajunior@gmail.com" method="post">
+                <input type="text" placeholder="Nome" name="nome">
+                <input type="email" placeholder="Email" name="email">
+                <input type="text" placeholder="Telefone">
+                <textarea name="mensagem" id="mensagem" cols="30" rows="5" placeholder="Mensagem"></textarea>
+                <input class="botao" type="submit" value="Enviar">
+              </form>
             </div>
           </div>
-          <div class="formulario">
-            <h3>Agende uma entrevista</h3>
-            <form action="https://formsubmit.co/alexandrelairajunior@gmail.com" method="post">
-              <input type="text" placeholder="Nome" name="nome">
-              <input type="email" placeholder="Email" name="email">
-              <input type="text" placeholder="Telefone">
-              <textarea name="mensagem" id="mensagem" cols="30" rows="5" placeholder="Mensagem"></textarea>
-              <input class="botao" type="submit" value="Enviar">
-            </form>
-          </div>
-        </div>
-      </footer>
-      <!-- FIM CONTATO -->
-
-      <p class="marca">Laira Development&reg</p>
-    </main>
-  </body>
+        </footer>
+        <!-- FIM CONTATO -->
+        
+        <p class="marca">Laira Development&reg</p>
+      </main>
+      <script type="module" src="./scripts/scripts.js"></script>
+    </body>
 </html>

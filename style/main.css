@@ -296,7 +296,7 @@
 
   .botao-mobile{
     display: block;
-    width: 35px;
+    width: 30px;
     height: 4px;
     background-color: var(--cor-botao);
     position: relative;
@@ -316,7 +316,7 @@
   .botao-mobile::before{
     display: block;
     content: '';
-    width: 35px;
+    width: 25px;
     height: 4px;
     background-color: var(--cor-botao);
     position: absolute;

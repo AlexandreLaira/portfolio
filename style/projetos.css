@@ -1,7 +1,22 @@
 .projetos{
-  background: linear-gradient(to bottom, var(--gray-3) 60%, var(--gray-5) 40%);
+  /* background: linear-gradient(to bottom, var(--gray-3) 60%, var(--gray-5) 40%); */
+  /* background: linear-gradient(to bottom, var(--red-2), var(--gray-8) 70%); */
   padding: 5rem 0;
+  background: linear-gradient(rgba(39, 45, 54, 0.5), rgba(11, 15, 20, 0.9)), url('../img/bg-projetos.jpg');
+  backdrop-filter: brightness(.4);
+  background-size: cover;
 }
+
+/* .bg-projetos{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  filter: brightness(.4);
+  opacity: .8;
+} */
 
 .projetos-lista{
   display: flex;
@@ -14,7 +29,6 @@
 
 .card{
   width: 110px;
-  background-size: cover;
   overflow: hidden;
   transition: 600ms cubic-bezier(.28, -.03, 0, .99);
   margin: 15px;
@@ -22,6 +36,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  backdrop-filter: blur(1em);
 }
 
 .card:hover{
@@ -37,7 +52,6 @@
 }
 
 .card > .icon{
-  /* background-color: rgba(34, 34, 51, 0.651); */
   background-color: var(--gray-7);
   color: #fff;
   padding: 5px 0px;
@@ -77,7 +91,7 @@ input:checked + label .icon{
   letter-spacing: 0.1em;
   position: relative;
   margin-bottom: 100px;
-  color: var(--gray-7);
+  color: var(--gray-1);
 }
 
 .secao-titulo::after{
@@ -139,19 +153,19 @@ input:checked + label .icon{
 
 
 .fundo1{
-  background: linear-gradient(rgba(91, 111, 118, 1) 80%, rgb(153, 163, 166));
+  background: hsl(0, 0, 100%, .78 );
 }
 
 .fundo2{
-  background: #272E3B;
+  background: hsl(200, 80%, 30%, .1 );
 }
 
 .fundo3{
-  background-color: #467B98;
+  background-color: hsla(123, 37%, 44%, 0.1);
 }
 
 .fundo4{
-  background-color: #1FA4ED;
+  background-color: hsl(201, 15%, 53%, .1);
 }
 
 
@@ -185,6 +199,12 @@ input:checked + label .icon{
 }
 
 @media screen and (width <= 769px) {
+  .projetos{
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
   .card{
     width: 350px;
     height: 150px;

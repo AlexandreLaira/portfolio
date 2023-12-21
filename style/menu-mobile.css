@@ -58,17 +58,20 @@
   transform: rotate(45deg);
   transition: transform 300ms;
   z-index: 4;
+  width: 25px;
 }
 
 .viraBotaoMenu::before{
   transform: rotate(90deg);
   background-color: var(--red-7);
   top: 0;
+
 }
 
 .viraBotaoMenu::after{
   background-color: var(--red-7);
   top: 0;
+  width: 25px;
 }
 
 
