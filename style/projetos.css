@@ -41,6 +41,7 @@
 
 .card:hover{
   width: 350px;
+  
 }
 
 .card > .row{
@@ -70,6 +71,7 @@
 input:checked + label{
   width: 350px;
   filter: blur(0px) brightness(1);
+  box-shadow: 1px 1px 1rem var(--gray-7);
 }
 
 input:checked + label .row{
