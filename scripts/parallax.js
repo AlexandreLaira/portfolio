@@ -31,3 +31,24 @@ setTimeout(() => {
 }, 300);
 window.addEventListener("scroll", moveUp);
 }
+
+function devTitle(){
+  const titulo = document.querySelector('.principal-titulo h1');
+  
+  console.log(titulo);
+
+  function handleMove(e){
+    let x = e.clientX;
+    let y = e.clientY;
+
+
+    
+
+  }
+
+  window.addEventListener('mousemove', handleMove)
+
+
+}
+
+devTitle();
