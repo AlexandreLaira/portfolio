@@ -29,9 +29,10 @@
 
 .card{
   width: 110px;
+  height: 600px;
   overflow: hidden;
   transition: 600ms cubic-bezier(.28, -.03, 0, .99);
-  margin: 15px;
+  padding: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -41,7 +42,6 @@
 
 .card:hover{
   width: 350px;
-  
 }
 
 .card > .row{
@@ -56,7 +56,7 @@
   background-color: var(--gray-7);
   color: #fff;
   padding: 5px 0px;
-  width: 100%;
+  width: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -109,21 +109,22 @@ input:checked + label .icon{
 
 .projetos-conteudo{
   display: flex;
-  width: 100%;
-  height: 600px;
   flex-direction: column;
   align-items: center;
   color: #FAFAFA;
   transition: transform 300ms;
   transition: scale 300ms ease-out;
+  margin: 15px;
 }
 
 .projetos-conteudo h3{
   margin: 2rem;
-  text-align: right;
   font-family: var(--font-secundaria);
   font-size: 25px;
   font-weight: 300;
+  width: 350px;
+  overflow: hidden;
+  text-align: center;
 }
 
 .projetos-conteudo p{
@@ -131,7 +132,7 @@ input:checked + label .icon{
   text-align: center;
   line-height: 1.7em;
   font-size: 14px;
-  width: 95%;
+  width: 350px;
   font-family: var(--font-secundaria);
   line-height: 2rem;
   letter-spacing: .04rem;
@@ -139,12 +140,12 @@ input:checked + label .icon{
   margin-bottom: 1rem;
 }
 
-
 .projetos-imagem img{
   height: 250px;
   object-fit: cover;
   object-position: top;
-  width: 100%;
+  width: 350px;
+  overflow: hidden;
 }
 
 
